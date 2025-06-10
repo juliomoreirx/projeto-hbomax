@@ -135,187 +135,209 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-/* ===== DESIGN SYSTEM HBO MAX - VARIÁVEIS CSS ===== */
+/* ===== DESIGN SYSTEM MAX - VARIÁVEIS CSS ===== */
 :root {
   /* ===========================================
-     BRAND COLORS - Cores da marca HBO MAX
+     BRAND COLORS - Cores da marca MAX (baseado na imagem)
      =========================================== */
-  --color-brand-primary: #9D2EFF;        /* Roxo principal HBO MAX */
-  --color-brand-secondary: #1E3A8A;      /* Azul secundário para botões */
-  --color-brand-gradient: linear-gradient(135deg, #9D2EFF 0%, #1E3A8A 100%);
+  --color-brand-primary: #4F6984;        /* Azul principal MAX (botões) */
+  --color-brand-secondary: #004C99;      /* Azul mais escuro para hover */
+  --color-brand-accent: #00A8FF;         /* Azul claro para destaques */
+  --color-brand-gradient: linear-gradient(135deg, #0073E6 0%, #004C99 100%);
 
   /* ===========================================
      BACKGROUND COLORS - Cores de fundo
      =========================================== */
   --color-background-primary: #000000;    /* Preto principal */
-  --color-background-secondary: #1C1C1C;  /* Cinza escuro para cards */
-  --color-background-tertiary: #1A1A1A;   /* Variação de fundo */
-  --color-background-overlay: rgba(0, 0, 0, 0.8); /* Overlay hero section */
-  --color-background-card: var(--color-background-secondary); /* Alias para cards */
+  --color-background-secondary: #1A1A1A;  /* Cinza muito escuro para seções */
+  --color-background-tertiary: #2D2D2D;   /* Cinza médio para cards */
+  --color-background-overlay: rgba(0, 0, 0, 0.85); /* Overlay hero section */
+  --color-background-card: #FFFFFF;       /* Cards brancos (planos) */
+  --color-background-card-dark: var(--color-background-tertiary); /* Cards escuros */
 
   /* ===========================================
      TEXT COLORS - Cores de texto
      =========================================== */
   --color-text-primary: #FFFFFF;          /* Branco principal */
-  --color-text-secondary: #8E8E93;        /* Cinza claro para textos secundários */
-  --color-text-muted: #666666;            /* Texto esmaecido */
-  --color-text-disabled: #444444;         /* Texto desabilitado */
+  --color-text-secondary: #B3B3B3;        /* Cinza claro para textos secundários */
+  --color-text-muted: #808080;            /* Texto esmaecido */
+  --color-text-disabled: #4D4D4D;         /* Texto desabilitado */
   --color-text-accent: var(--color-brand-primary); /* Texto em destaque */
+  --color-text-on-white: #000000;         /* Texto em fundos brancos */
+  --color-text-on-card: #333333;          /* Texto em cards brancos */
 
   /* ===========================================
      BORDER & OUTLINE COLORS - Bordas e contornos
      =========================================== */
   --color-border-primary: #333333;        /* Bordas principais */
-  --color-border-secondary: #222222;      /* Bordas secundárias */
-  --color-border-light: #555555;          /* Bordas claras */
+  --color-border-secondary: #4D4D4D;      /* Bordas secundárias */
+  --color-border-light: #666666;          /* Bordas claras */
   --color-border-accent: var(--color-brand-primary); /* Bordas em destaque */
+  --color-border-card: rgba(0, 0, 0, .8);           /* Bordas de cards */
 
   /* ===========================================
      STATUS COLORS - Cores de status
      =========================================== */
-  --color-success: #10B981;               /* Verde para sucesso */
-  --color-warning: #F59E0B;               /* Amarelo para avisos */
-  --color-error: #EF4444;                 /* Vermelho para erros */
-  --color-info: #3B82F6;                  /* Azul para informações */
+  --color-success: #00C851;               /* Verde para sucesso */
+  --color-warning: #FF8800;               /* Laranja para avisos */
+  --color-error: #FF4444;                 /* Vermelho para erros */
+  --color-info: var(--color-brand-primary); /* Azul para informações */
 
   /* ===========================================
-     TYPOGRAPHY SYSTEM - Sistema tipográfico
+     TYPOGRAPHY SYSTEM - Sistema tipográfico (baseado na imagem)
      =========================================== */
-  --font-primary: 'Helvetica Neue', 'Arial', sans-serif;
+  --font-primary: "Poppins", Arial, sans-serif; /* Fonte similar ao MAX */
 
-  /* Font Sizes - Baseado na análise da referência */
-  --font-size-logo: 3rem;                 /* 48px - Logo HBO MAX */
-  --font-size-hero: 2.5rem;               /* 40px - Títulos principais */
-  --font-size-heading-1: 2rem;            /* 32px - H1 */
-  --font-size-heading-2: 1.75rem;         /* 28px - H2 */
+  /* Font Sizes - Baseado nos elementos visíveis */
+  --font-size-logo: 4rem;                 /* 64px - Logo MAX grande */
+  --font-size-hero: 3rem;                 /* 48px - Títulos principais hero */
+  --font-size-heading-1: 2.5rem;          /* 40px - H1 principais */
+  --font-size-heading-2: 2rem;            /* 32px - H2 seções */
   --font-size-heading-3: 1.5rem;          /* 24px - H3 */
   --font-size-heading-4: 1.25rem;         /* 20px - H4 */
   --font-size-body: 1rem;                 /* 16px - Texto corpo */
   --font-size-body-small: 0.875rem;       /* 14px - Texto pequeno */
   --font-size-caption: 0.75rem;           /* 12px - Legendas */
-  --font-size-button: 1rem;               /* 16px - Botões */
-  --font-size-price: 1.75rem;             /* 28px - Preços destacados */
+  --font-size-button: 0.875rem;           /* 14px - Botões */
+  --font-size-price: 2rem;                /* 32px - Preços destacados */
+  --font-size-price-small: 1.25rem;       /* 20px - Preços menores */
 
-  /* Font Weights - Pesos da fonte */
+  /* Font Weights */
   --font-weight-light: 300;
   --font-weight-regular: 400;
-  --font-weight-medium: 500;              /* Para botões */
+  --font-weight-medium: 500;
   --font-weight-semibold: 600;
-  --font-weight-bold: 700;                /* Para títulos */
-  --font-weight-extrabold: 800;           /* Para logo */
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
   --font-weight-black: 900;
 
-  /* Line Heights - Alturas de linha */
-  --line-height-tight: 1.2;              /* Para títulos */
-  --line-height-normal: 1.5;             /* Para corpo normal */
-  --line-height-relaxed: 1.6;            /* Para parágrafos */
-  --line-height-loose: 1.8;              /* Para textos longos */
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.4;
+  --line-height-relaxed: 1.6;
+  --line-height-loose: 1.8;
 
-  /* Letter Spacing - Espaçamento de letras */
+  /* Letter Spacing */
   --letter-spacing-tight: -0.025em;
   --letter-spacing-normal: 0;
-  --letter-spacing-wide: 0.05em;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
 
   /* ===========================================
      LAYOUT SYSTEM - Sistema de layout
      =========================================== */
-  --container-max-width: 1200px;          /* Conforme especificação */
+  --container-max-width: 1200px;
+  --container-max-width-wide: 1400px;     /* Para seções mais largas */
 
   /* Spacing Values - Mobile First */
-  --padding-lateral-mobile: 20px;         /* Conforme especificação */
-  --padding-lateral-desktop: 40px;        /* Conforme especificação */
+  --padding-lateral-mobile: 16px;
+  --padding-lateral-tablet: 24px;
+  --padding-lateral-desktop: 40px;
   
-  --grid-gap-mobile: 16px;                /* Conforme especificação */
-  --grid-gap-desktop: 24px;               /* Conforme especificação */
+  --grid-gap-mobile: 12px;
+  --grid-gap-tablet: 16px;
+  --grid-gap-desktop: 24px;
   
-  --section-spacing-mobile: 60px;         /* Conforme especificação */
-  --section-spacing-desktop: 100px;       /* Conforme especificação */
+  --section-spacing-mobile: 40px;
+  --section-spacing-tablet: 60px;
+  --section-spacing-desktop: 80px;
 
-  /* Spacing Scale - Escala de espaçamentos */
-  --space-xs: 8px;
-  --space-sm: 16px;
-  --space-md: 24px;
-  --space-lg: 32px;
-  --space-xl: 48px;
-  --space-xxl: 64px;
-  --space-xxxl: 80px;
+  /* Spacing Scale */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+  --space-xxxl: 64px;
 
   /* ===========================================
      COMPONENT SYSTEM - Sistema de componentes
      =========================================== */
   
-  /* Cards - Para seção de planos */
-  --card-background: var(--color-background-secondary);
-  --card-border: 1px solid var(--color-border-primary);
-  --card-border-radius: 12px;
-  --card-padding: 24px;
-  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.4);
+  /* Cards */
+  --card-background: var(--color-background-card);
+  --card-background-dark: var(--color-background-card-dark);
+  --card-border: 1px solid var(--color-border-card);
+  --card-border-radius: 8px;
+  --card-border-radius-large: 12px;
+  --card-padding: 20px;
+  --card-padding-large: 24px;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --card-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --card-shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.3);
 
-  /* Buttons - Sistema de botões */
-  --button-height: 48px;
+  /* Buttons - Sistema baseado nos botões da imagem */
+  --button-height: 44px;
   --button-height-small: 36px;
-  --button-height-large: 56px;
+  --button-height-large: 52px;
   --button-padding-x: 24px;
   --button-padding-x-small: 16px;
-  --button-border-radius: 8px;
-  --button-font-weight: var(--font-weight-medium);
+  --button-border-radius: 4px;
+  --button-font-weight: var(--font-weight-semibold);
+  --button-font-size: var(--font-size-button);
 
-  /* Button Colors */
-  --button-primary-bg: var(--color-brand-secondary);
-  --button-primary-text: var(--color-text-primary);
-  --button-primary-hover: #1E40AF;
+  /* Button Colors - Baseado no azul dos botões MAX */
+  --button-primary-bg: var(--color-brand-primary);
+  --button-primary-text: #FFFFFF;
+  --button-primary-hover: var(--color-brand-secondary);
   
   --button-secondary-bg: transparent;
   --button-secondary-text: var(--color-text-primary);
-  --button-secondary-border: var(--color-border-primary);
-  --button-secondary-hover: var(--color-background-secondary);
+  --button-secondary-border: 1px solid var(--color-border-light);
+  --button-secondary-hover: var(--color-background-tertiary);
 
-  /* Form Elements */
-  --input-height: 48px;
-  --input-padding: 12px 16px;
-  --input-border: 1px solid var(--color-border-primary);
-  --input-border-radius: 8px;
-  --input-background: var(--color-background-secondary);
-  --input-focus-border: var(--color-brand-primary);
+  /* Toggle/Selector específico para planos */
+  --toggle-bg: var(--color-background-tertiary);
+  --toggle-active-bg: #FFFFFF;
+  --toggle-active-text: var(--color-text-on-white);
+  --toggle-inactive-text: var(--color-text-secondary);
 
-  /* Hero Section - Específico para hero */
+  /* ===========================================
+     HERO SECTION - Específico baseado na imagem
+     =========================================== */
   --hero-overlay-bg: var(--color-background-overlay);
   --hero-logo-size: var(--font-size-logo);
-  --hero-cta-spacing: var(--space-md);
+  --hero-subtitle-size: 1.125rem; /* 18px */
+  --hero-cta-spacing: var(--space-lg);
+  --hero-content-max-width: 600px;
 
-  /* Content Sections - Para carrosséis e grids */
-  --thumbnail-aspect-ratio: 16/9;         /* Proporção dos thumbnails */
-  --thumbnail-border-radius: 8px;
-  --carousel-gap: var(--space-sm);
-  --carousel-scroll-padding: var(--space-md);
+  /* ===========================================
+     CONTENT SECTIONS - Para carrosséis e grids
+     =========================================== */
+  --thumbnail-aspect-ratio: 16/9;
+  --thumbnail-border-radius: 6px;
+  --carousel-gap: var(--space-md);
+  --carousel-scroll-padding: var(--space-lg);
+  --content-grid-columns: repeat(auto-fit, minmax(200px, 1fr));
+  --content-grid-gap: var(--space-md);
 
   /* ===========================================
      VISUAL EFFECTS - Efeitos visuais
      =========================================== */
   
-  /* Border Radius - Raios de borda */
+  /* Border Radius */
   --radius-small: 4px;
-  --radius-medium: 8px;
-  --radius-large: 12px;
-  --radius-xlarge: 16px;
+  --radius-medium: 6px;
+  --radius-large: 8px;
+  --radius-xlarge: 12px;
   --radius-full: 9999px;
 
-  /* Shadows - Sombras específicas HBO MAX */
-  --shadow-small: 0 1px 3px rgba(0, 0, 0, 0.2);
-  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.3);
-  --shadow-large: 0 8px 24px rgba(0, 0, 0, 0.4);
-  --shadow-xlarge: 0 16px 48px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 20px rgba(157, 46, 255, 0.3); /* Glow roxo */
+  /* Shadows específicas MAX */
+  --shadow-small: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-large: 0 4px 16px rgba(0, 0, 0, 0.2);
+  --shadow-xlarge: 0 8px 32px rgba(0, 0, 0, 0.25);
+  --shadow-content: 0 2px 12px rgba(0, 0, 0, 0.3); /* Para cards de conteúdo */
 
-  /* Transitions - Transições suaves */
-  --transition-fast: 0.15s ease-in-out;
-  --transition-normal: 0.3s ease-in-out;
-  --transition-slow: 0.5s ease-in-out;
+  /* Transitions */
+  --transition-fast: 0.15s ease-out;
+  --transition-normal: 0.25s ease-out;
+  --transition-slow: 0.4s ease-out;
   --transition-bounce: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
   /* ===========================================
-     Z-INDEX SCALE - Camadas de profundidade
+     Z-INDEX SCALE
      =========================================== */
   --z-base: 0;
   --z-dropdown: 1000;
@@ -330,27 +352,99 @@ select:-webkit-autofill:focus {
   /* ===========================================
      BREAKPOINTS - Pontos de quebra
      =========================================== */
-  /* Nota: Valores para referência, uso real será no responsive.css */
   --breakpoint-mobile: 320px;
   --breakpoint-tablet: 768px;
   --breakpoint-desktop: 1024px;
   --breakpoint-wide: 1200px;
+  --breakpoint-ultrawide: 1400px;
+
+  /* ===========================================
+     PLANS COMPONENT VARIABLES - Variáveis específicas dos planos
+     =========================================== */
+  --plans-max-width: var(--container-max-width);
+  --plans-billing-selector-width: 320px;
+  --plans-billing-selector-height: 48px;
+  --plans-billing-selector-bg: var(--toggle-bg);
+  --plans-billing-selector-radius: var(--radius-full);
+  --plans-billing-selector-margin: 1.5rem auto;
+
+  --plans-billing-label-font-size: var(--font-size-caption);
+  --plans-billing-label-font-weight: var(--font-weight-semibold);
+  --plans-billing-label-color: var(--color-text-secondary);
+
+  --plans-toggle-option-font-size: var(--font-size-button);
+  --plans-toggle-option-font-weight: var(--font-weight-medium);
+  --plans-toggle-option-color: var(--toggle-inactive-text);
+  --plans-toggle-option-padding: 0.65rem 1.85rem;
+  --plans-toggle-option-radius: var(--radius-full);
+  --plans-toggle-option-bg-active: var(--toggle-active-bg);
+  --plans-toggle-option-color-active: var(--toggle-active-text);
+
+  --plans-card-bg: var(--card-background);
+  --plans-card-radius: var(--card-border-radius-large);
+  --plans-card-shadow: var(--card-shadow);
+  --plans-card-padding: var(--card-padding-large);
+  --plans-card-height: 400px;
+  --plans-card-border: var(--card-border);
+
+  --plans-card-title-font-size: var(--font-size-heading-3);
+  --plans-card-title-font-weight: var(--font-weight-bold);
+  --plans-card-title-color: var(--color-text-on-card);
+
+  --plans-card-price-font-size: var(--font-size-price);
+  --plans-card-price-font-weight: var(--font-weight-bold);
+  --plans-card-price-color: var(--color-text-on-card);
+
+  --plans-btn-bg: var(--button-primary-bg);
+  --plans-btn-text: var(--button-primary-text);
+  --plans-btn-hover: var(--button-primary-hover);
+  --plans-btn-font-size: var(--button-font-size);
+  --plans-btn-font-weight: var(--button-font-weight);
+  --plans-btn-padding: 0.5rem 0.5rem;
+  --plans-btn-radius: var(--button-border-radius);
+  --plans-btn-height: var(--button-height);
+
+  --plans-grid-gap: var(--space-xs);
+  --plans-grid-columns-mobile: 1;
+  --plans-grid-columns-tablet: 2;
+  --plans-grid-columns-desktop: 3;
 }
 
 /* ===========================================
-   UTILITY CLASSES - Classes utilitárias básicas
+   UTILITY CLASSES - Classes utilitárias
    =========================================== */
 
 /* Container base */
 .container {
   max-width: var(--container-max-width);
   margin: 0 auto;
+  padding: 0 var(--padding-lateral-mobile);
+}
+
+.container-wide {
+  max-width: var(--container-max-width-wide);
+  margin: 0 auto;
+  padding: 0 var(--padding-lateral-mobile);
+}
+
+@media (min-width: 768px) {
+  .container,
+  .container-wide {
+    padding: 0 var(--padding-lateral-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container,
+  .container-wide {
+    padding: 0 var(--padding-lateral-desktop);
+  }
 }
 
 /* Typography utilities */
 .text-logo {
   font-size: var(--font-size-logo);
-  font-weight: var(--font-weight-extrabold);
+  font-weight: var(--font-weight-black);
   line-height: var(--line-height-tight);
 }
 
@@ -369,13 +463,13 @@ select:-webkit-autofill:focus {
 .text-heading-2 {
   font-size: var(--font-size-heading-2);
   font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-tight);
+  line-height: var(--line-height-normal);
 }
 
 .text-heading-3 {
   font-size: var(--font-size-heading-3);
   font-weight: var(--font-weight-semibold);
-  line-height: var(--line-height-tight);
+  line-height: var(--line-height-normal);
 }
 
 .text-body {
@@ -408,8 +502,17 @@ select:-webkit-autofill:focus {
 .text-muted { color: var(--color-text-muted); }
 .text-accent { color: var(--color-text-accent); }
 .text-brand { color: var(--color-brand-primary); }
+.text-on-white { color: var(--color-text-on-white); }
+.text-on-card { color: var(--color-text-on-card); }
 
-/* Display utilities básicas */
+/* Background utilities */
+.bg-primary { background-color: var(--color-background-primary); }
+.bg-secondary { background-color: var(--color-background-secondary); }
+.bg-tertiary { background-color: var(--color-background-tertiary); }
+.bg-card { background-color: var(--color-background-card); }
+.bg-card-dark { background-color: var(--color-background-card-dark); }
+
+/* Display utilities */
 .grid { display: grid; }
 .flex { display: flex; }
 .flex-center {
@@ -421,6 +524,68 @@ select:-webkit-autofill:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* Spacing utilities */
+.gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); }
+.gap-lg { gap: var(--space-lg); }
+.gap-xl { gap: var(--space-xl); }
+
+/* Button base class */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--button-padding-x-small) var(--button-padding-x);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1;
+  text-decoration: none;
+  border-radius: var(--button-border-radius);
+  transition: var(--transition-normal);
+  cursor: pointer;
+  border: none;
+  min-height: var(--button-height);
+}
+
+.btn-primary {
+  background-color: var(--button-primary-bg);
+  color: var(--button-primary-text);
+}
+
+.btn-primary:hover {
+  background-color: var(--button-primary-hover);
+}
+
+.btn-secondary {
+  background-color: var(--button-secondary-bg);
+  color: var(--button-secondary-text);
+  border: var(--button-secondary-border);
+}
+
+.btn-secondary:hover {
+  background-color: var(--button-secondary-hover);
+}
+
+/* Card base class */
+.card {
+  background-color: var(--card-background);
+  border: var(--card-border);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition-normal);
+}
+
+.card:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.card-dark {
+  background-color: var(--card-background-dark);
+  border-color: var(--color-border-primary);
+  color: var(--color-text-primary);
 }
 
 /* Accessibility */
@@ -437,7 +602,7 @@ select:-webkit-autofill:focus {
 }
 
 /* ===========================================
-   PRINT STYLES - Estilos para impressão
+   PRINT STYLES
    =========================================== */
 @media print {
   *,
