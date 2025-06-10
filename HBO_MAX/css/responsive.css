@@ -1,0 +1,276 @@
+/* ========================================
+   RESPONSIVE BREAKPOINTS - responsive.css
+   ======================================== */
+
+/* ========================================
+   GLOBAL: Mobile First - Default styles (0px - 575px)
+   ========================================
+   Estilos mobile vão aqui sem media query
+   ======================================== */
+
+
+/* ========================================
+   PLANOS COMPONENT - Small Mobile Portrait (0px - 575px)
+   ========================================
+   Estes estilos são específicos para o componente .planos e seus filhos
+   em dispositivos móveis pequenos (portrait, até 575px).
+
+   
+
+   ======================================== */
+
+
+   @media screen and (min-width: 320px) and (max-width: 575px) {
+    /* Container principal dos planos */
+    .planos {
+        max-width: auto;
+        margin: 0 auto;
+    }
+
+    /* Cartões individuais dos planos */
+    .planos .plano-card {
+        height: 28rem;
+    }
+
+    /* Seletor de cobrança (ex: mensal/anual) */
+    .planos__billing-selector {
+        width: 278px;
+        height: 3rem;
+        background-color: #262626;
+        margin: 1rem auto;
+        border-radius: 6.25rem;
+    }
+
+    /* Toggle do seletor de cobrança */
+    .planos__toggle {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: auto;
+        height: inherit;
+    }
+
+    /* Opções do toggle (mensal/anual) */
+    .planos__toggle-option {
+        width: auto;
+        font-size: 0.620rem;
+        padding: 0.7rem 2rem;
+
+    }
+
+    /* Label do seletor de cobrança */
+    .planos__billing-label {
+        font-size: 0.675rem;
+        font-weight: 700;
+    }
+    
+
+
+    .planos h2 {
+        font-size: 0.875rem;
+        letter-spacing: 0.15rem;
+        text-align: center;
+        margin: 1.5rem 0 1rem;
+    }
+
+    .plano-card__title {
+        --plans-card-title-font-size: var(--font-size-heading-4);
+    }
+
+
+    /* Grid de planos: exibe cartões em coluna quando mensal está selecionado */
+    #billing-mensal:checked ~ #planos-mensais {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+            "plano-card-1"
+            "plano-card-2"
+            "plano-card-3";
+    }
+    
+    /* Grid de planos: exibe cartões em coluna quando anual está selecionado */
+    #billing-anual:checked ~ #planos-anuais {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+            "plano-card-1"
+            "plano-card-2"
+            "plano-card-3";
+    }
+
+    /* Áreas do Grid para os cartões */
+    .plano-card-1 { grid-area: plano-card-1; }
+    .plano-card-2 { grid-area: plano-card-2; }
+    .plano-card-3 { grid-area: plano-card-3; }
+}
+
+/* ========================================
+   PLANOS COMPONENT - Small Mobile Landscape (576px - 767px)
+   ========================================
+   Estilos dos planos para dispositivos móveis pequenos na horizontal
+   ======================================== */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .planos {
+        max-width: auto;
+        margin: 0 auto;
+    }
+
+    .planos .plano-card {
+        height: 22rem;
+    }
+    .planos h2 {
+        font-size: 1.285rem;
+        letter-spacing: 0.15rem;
+        text-align: center;
+        margin: 1.5rem 0 1rem;
+    }
+
+    /* Label do seletor de cobrança */
+    .planos__billing-label {
+        font-size: 0.675rem;
+        font-weight: 700;
+
+    }
+
+    .planos__toggle-option {
+        width: auto;
+        font-size: 0.820rem;
+        padding: 0.55rem 2rem;
+    }
+
+    #billing-mensal:checked ~ #planos-mensais,
+    #billing-anual:checked ~ #planos-anuais {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+            "plano-card-1"
+            "plano-card-2"
+            "plano-card-3";
+    }
+
+    .plano-card-1 { grid-area: plano-card-1; }
+    .plano-card-2 { grid-area: plano-card-2; }
+    .plano-card-3 { grid-area: plano-card-3; }
+}
+
+/* ========================================
+   PLANOS COMPONENT - Tablet (768px - 1023px)
+   ========================================
+   Estilos dos planos para tablets
+   ======================================== */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .planos {
+        max-width: auto;
+        margin: 0 auto;
+    }
+
+    .planos .plano-card {
+        height: 22rem;
+    }
+    .planos h2 {
+        letter-spacing: 0.15rem;
+        text-align: center;
+        margin: 1.5rem 0 1rem;
+    }
+
+    /* Label do seletor de cobrança */
+    .planos__billing-label {
+        font-size: 0.675rem;
+        font-weight: 700;
+
+    }
+
+    .planos__toggle-option {
+        width: auto;
+        font-size: 0.820rem;
+        padding: 0.60rem 2.1rem;
+    }
+
+    #billing-mensal:checked ~ #planos-mensais,
+    #billing-anual:checked ~ #planos-anuais {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "plano-card-1 plano-card-2"
+            "plano-card-3 plano-card-3";
+    }
+
+    .plano-card-1 { grid-area: plano-card-1; }
+    .plano-card-2 { grid-area: plano-card-2; }
+    .plano-card-3 {
+        grid-area: plano-card-3;
+        grid-column: span 2;
+    }
+}
+
+/* ========================================
+   PLANOS COMPONENT - Desktop (1024px - 1199px)
+   ========================================
+   Estilos dos planos para desktops médios
+   ======================================== */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .planos {
+        max-width: auto;
+        margin: 0 auto;
+    }
+
+    /* Label do seletor de cobrança */
+    .planos__billing-label {
+        font-size: 0.675rem;
+        font-weight: 700;
+
+    }
+
+    .planos__toggle-option {
+        width: auto;
+        font-size: 0.850rem;
+        padding: 0.50rem 1.9rem;
+    }
+
+    #billing-mensal:checked ~ #planos-mensais,
+    #billing-anual:checked ~ #planos-anuais {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .planos .plano-card__title {
+        --plans-card-title-font-size: var(--font-size-heading-4);
+    }
+}
+
+/* ========================================
+   PLANOS COMPONENT - Large Desktop (1200px+)
+   ========================================
+   Estilos dos planos para desktops grandes (pode ser extendido conforme necessário)
+   ======================================== */
+@media screen and (min-width: 1200px) {
+    /* Adicione estilos específicos para telas grandes aqui, se necessário */
+
+    /* Label do seletor de cobrança */
+    .planos__billing-label {
+        font-size: 0.675rem;
+        font-weight: 700;
+    }
+
+    .planos__toggle-option {
+        width: auto;
+        font-size: 0.850rem;
+        padding: 0.60rem 1.9rem;
+    }
+}
+
+/* ========================================
+   PLANOS COMPONENT - Extra Large Desktop (1400px+)
+   ========================================
+   Estilos dos planos para telas muito grandes
+   ======================================== */
+@media (min-width: 1400px) {
+    .planos {
+        max-width: 1340px;
+        margin: 0 auto;
+    }
+}
+
+/* ========================================
+   FIM DOS ESTILOS DO COMPONENTE PLANOS
+   ======================================== */
