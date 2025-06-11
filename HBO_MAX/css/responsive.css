@@ -23,7 +23,7 @@
 @media screen and (min-width: 575px) {
 
     /* Desativa o menu mobile */
-    /* .header-mobile {
+    /* .hamburger-menu {
         display: none;
     } */
 
@@ -118,7 +118,7 @@
 
 @media screen and (min-width:576px) and (max-width: 767px) {
     .overlay {
-        width: 300px;
+        width: 400px;
     }
 }
 
@@ -173,6 +173,16 @@
    Estilos dos planos para tablets
    ======================================== */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .overlay {
+        width: 400px;
+    }
+
+    .header {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
     .planos h2 {
         letter-spacing: 0.15rem;
@@ -221,6 +231,16 @@
    ========================================
    Estilos dos planos para desktops médios
    ======================================== */
+@media screen and (min-width: 1024px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .header-desktop {
+        display: block;
+    }
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
 
 

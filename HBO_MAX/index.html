@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Assista filmes, séries e muito mais com Max. Planos acessíveis, títulos imperdíveis!">
+    <meta name="description"
+        content="Assista filmes, séries e muito mais com Max. Planos acessíveis, títulos imperdíveis!">
     <meta name="keywords" content="filmes, séries, streaming, Max, HBO Max, assistir online">
 
 
@@ -29,37 +30,56 @@
     <!-- Preconnect para fontes (otimização de performance) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <title>Assistir Filmes Online | Assistir Séries Online | Max</title>
 </head>
 
 <body>
 
     <header class="header">
-        <!-- Conteúdo do header será implementado aqui -->
-        <div class="header-mobile">
-            <!-- Checkbox controla ícone e overlay -->
-            <input type="checkbox" id="checkbox" hidden />
+        <div class="flex">
+            <div class="hamburger-menu">
+                <!-- Checkbox controla ícone e overlay -->
+                <input type="checkbox" id="checkbox" hidden />
 
-            <!-- Ícone hambúrguer -->
-            <label for="checkbox" class="container-icon border">
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
-            </label>
+                <!-- Ícone hambúrguer -->
+                <label for="checkbox" class="container-icon border">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </label>
 
-            <!-- Menu Overlay -->
-            <div class="overlay">
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#">Opção 1</a></li>
-                        <li><a href="#">Opção 2</a></li>
-                        <li><a href="#">Opção 3</a></li>
-                        <li><a href="#">Opção 4</a></li>
-                        <li><a href="#">Opção 5</a></li>
-                    </ul>
-                </nav>
+                <!-- Menu Overlay -->
+                <div class="overlay">
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#">Opção 1</a></li>
+                            <li><a href="#">Opção 2</a></li>
+                            <li><a href="#">Opção 3</a></li>
+                            <li><a href="#">Opção 4</a></li>
+                            <li><a href="#">Opção 5</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
+
+            <div>
+                <a href=""><img src="/HBO_MAX/assets/img/logos/max_logo.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="header-desktop">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Séries de TV</a></li>
+                    <li><a href="#">Crianças e Família</a></li>
+                    <li><a href="#">Marcas</a></li>
+                    <li><a href="#">Episódios Grátis</a></li>
+                    <li><a href="#">Futebol</a></li>
+                    <li><a href="#">Opção 5</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 

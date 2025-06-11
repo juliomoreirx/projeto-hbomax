@@ -1,18 +1,38 @@
+/* 
+=======================================
+    MENU MOBILE
+=======================================
+*/
+
 .header {
     border: 1px solid green;
-    height: 4rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 150px;
+        padding: 1rem;
+        margin-left: 0.5rem;
+    }
+
 }
+
+.flex {
+    display: flex;
+}
+
 
 .container-icon {
     width: 2rem;
     height: 1.5rem;
     cursor: pointer;
     display: flex;
-    margin: 1rem;
+    margin: 1.2rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: relative;
     z-index: 3;
 }
 
@@ -61,18 +81,18 @@
     visibility: visible;
 }
 
-.menu ul {
+.overlay .menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
-.menu li {
+.overlay .menu li {
     margin: 20px 0;
 }
 
-.menu a {
+.overlay .menu a {
     text-decoration: none;
     font-size: 24px;
     color: white;
@@ -80,10 +100,25 @@
     transition: color 0.3s;
 }
 
-.menu a:hover {
+.overlay .menu a:hover {
     color: #999;
 }
 
 /* .border {
     border: 1px solid red;
 } */
+
+/* 
+=======================================
+    MENU DESKTOP
+=======================================
+*/
+
+.header-desktop {
+    display: none;
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+}
