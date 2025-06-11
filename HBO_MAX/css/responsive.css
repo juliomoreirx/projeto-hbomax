@@ -114,7 +114,7 @@
    ========================================
    Estilos dos planos para dispositivos móveis pequenos na horizontal
    ======================================== */
-@media screen and (min-width: 412px) and (max-width: 576px) {
+@media screen and (min-width: 412px) and (max-width: 767px) {
 
     .planos h2 {
         font-size: 1.285rem;
