@@ -5,10 +5,16 @@
    Totalmente integrado com o CSS global atualizado.
    =============================== */
 
-   .planos {
-    max-width: var(--plans-max-width);
-    margin: 0 auto;
-}
+    .planos {
+        width: 100%;                /* Ocupa toda a largura disponível */
+        max-width: var(--plans-max-width);          /* Limita a largura máxima */
+        margin-left: auto;          /* Centraliza horizontalmente */
+        margin-right: auto;         /* Centraliza horizontalmente */
+        padding-left: 2px;         /* Margem interna pra não encostar na borda da tela */
+        padding-right: 2px;        /* Margem interna pra não encostar na borda da tela */
+        box-sizing: border-box;     /* Faz o padding não aumentar o tamanho total */
+      }
+      
 
 /* Titulo dos planos */
 .planos h2 {
@@ -127,7 +133,6 @@
     color: var(--color-text-on-card);
     text-align: center;
     width: auto;
-    height: var(--plans-card-height);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -162,6 +167,7 @@
     font-size: var(--font-size-body-small);
     line-height: var(--line-height-relaxed);
     color: var(--color-text-on-card);
+    margin-bottom: var(--space-lg);
 }
 
 .planos .plano-card__features ul {

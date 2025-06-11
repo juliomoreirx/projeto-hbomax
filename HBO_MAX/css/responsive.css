@@ -20,35 +20,22 @@
    ======================================== */
 
 
-   @media screen and (min-width: 320px) and (max-width: 575px) {
+   @media screen and (min-width: 320px) and (max-width: 411px) {
     /* Container principal dos planos */
-    .planos {
-        max-width: auto;
-        margin: 0 auto;
-    }
+
 
     /* Cartões individuais dos planos */
-    .planos .plano-card {
-        height: 28rem;
-    }
+
 
     /* Seletor de cobrança (ex: mensal/anual) */
     .planos__billing-selector {
-        width: 278px;
+        width: auto;
         height: 3rem;
         background-color: #262626;
         margin: 1rem auto;
         border-radius: 6.25rem;
     }
 
-    /* Toggle do seletor de cobrança */
-    .planos__toggle {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: auto;
-        height: inherit;
-    }
 
     /* Opções do toggle (mensal/anual) */
     .planos__toggle-option {
@@ -62,6 +49,7 @@
     .planos__billing-label {
         font-size: 0.675rem;
         font-weight: 700;
+        left: 3.5rem;
     }
     
 
@@ -109,15 +97,8 @@
    ========================================
    Estilos dos planos para dispositivos móveis pequenos na horizontal
    ======================================== */
-@media screen and (min-width: 576px) and (max-width: 767px) {
-    .planos {
-        max-width: auto;
-        margin: 0 auto;
-    }
+@media screen and (min-width: 412px) and (max-width: 576px) {
 
-    .planos .plano-card {
-        height: 22rem;
-    }
     .planos h2 {
         font-size: 1.285rem;
         letter-spacing: 0.15rem;
@@ -159,14 +140,7 @@
    Estilos dos planos para tablets
    ======================================== */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .planos {
-        max-width: auto;
-        margin: 0 auto;
-    }
 
-    .planos .plano-card {
-        height: 22rem;
-    }
     .planos h2 {
         letter-spacing: 0.15rem;
         text-align: center;
@@ -209,10 +183,7 @@
    Estilos dos planos para desktops médios
    ======================================== */
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
-    .planos {
-        max-width: auto;
-        margin: 0 auto;
-    }
+
 
     /* Label do seletor de cobrança */
     .planos__billing-label {
@@ -265,10 +236,9 @@
    Estilos dos planos para telas muito grandes
    ======================================== */
 @media (min-width: 1400px) {
-    .planos {
+    .planos {               
         max-width: 1340px;
-        margin: 0 auto;
-    }
+      }
 }
 
 /* ========================================
