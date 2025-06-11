@@ -1,25 +1,76 @@
+/* 
+=======================================
+    MENU MOBILE
+=======================================
+*/
+
 .header {
     border: 1px solid green;
-    height: 4rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-background-primary);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-caption);
+
+    img {
+        max-width: 120px;
+        padding: 0.5rem;
+        margin: 5px 0.5rem;
+    }
+
+    a {
+        text-transform: uppercase;
+    }
+
+    .login-area {
+        width: 300px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            justify-content: flex-end;
+        }
+
+        ul li {
+            padding: 0.9rem;
+            margin: 0 0.5rem;
+            /* border: 1px solid red; */
+
+
+        }
+    }
 }
+
+.button {
+    background: var(--color-text-primary);
+    color: var(--color-text-on-white);
+    border-radius: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
 
 .container-icon {
     width: 2rem;
     height: 1.5rem;
     cursor: pointer;
     display: flex;
-    margin: 1rem;
+    margin: 0.9rem 1rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: relative;
     z-index: 3;
 }
 
 .line {
-    width: 35px;
+    width: 30px;
     height: 3px;
-    background-color: white;
+    background-color: var(--color-text-secondary);
     border-radius: 8px;
     transition: all ease 0.2s;
     transform-origin: center
@@ -61,18 +112,18 @@
     visibility: visible;
 }
 
-.menu ul {
+.overlay .menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
-.menu li {
+.overlay .menu li {
     margin: 20px 0;
 }
 
-.menu a {
+.overlay .menu a {
     text-decoration: none;
     font-size: 24px;
     color: white;
@@ -80,10 +131,34 @@
     transition: color 0.3s;
 }
 
-.menu a:hover {
+.overlay .menu a:hover {
     color: #999;
 }
 
 /* .border {
     border: 1px solid red;
 } */
+
+/* 
+=======================================
+    MENU DESKTOP
+=======================================
+*/
+
+.header-desktop {
+    display: none;
+    justify-content: space-between;
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            padding: 0.9rem 0.5rem;
+            margin: 0 5px;
+            /* border: 1px solid red; */
+
+        }
+    }
+
+}
