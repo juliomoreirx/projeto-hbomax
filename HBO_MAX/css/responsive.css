@@ -19,12 +19,13 @@
 
    ======================================== */
 
+/* Menu Hamburguer */
 @media screen and (min-width: 575px) {
 
     /* Desativa o menu mobile */
-    .header-mobile {
+    /* .header-mobile {
         display: none;
-    }
+    } */
 
 }
 
@@ -114,6 +115,13 @@
    ========================================
    Estilos dos planos para dispositivos móveis pequenos na horizontal
    ======================================== */
+
+@media screen and (min-width:576px) and (max-width: 767px) {
+    .overlay {
+        width: 300px;
+    }
+}
+
 @media screen and (min-width: 412px) and (max-width: 767px) {
 
     .planos h2 {
