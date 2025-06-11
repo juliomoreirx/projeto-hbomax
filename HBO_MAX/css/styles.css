@@ -404,7 +404,7 @@ select:-webkit-autofill:focus {
   --plans-btn-radius: var(--button-border-radius);
   --plans-btn-height: var(--button-height);
 
-  --plans-grid-gap: var(--space-xs);
+  --plans-grid-gap: var(--space-md);
   --plans-grid-columns-mobile: 1;
   --plans-grid-columns-tablet: 2;
   --plans-grid-columns-desktop: 3;
