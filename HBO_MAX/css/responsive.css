@@ -20,7 +20,7 @@
    ======================================== */
 
 
-   @media screen and (min-width: 320px) and (max-width: 411px) {
+@media screen and (min-width: 320px) and (max-width: 411px) {
 
 
 
@@ -28,14 +28,14 @@
         width: auto;
         font-size: 0.850rem;
         padding: auto auto;
-        
-        }
+
+    }
 
     .planos__billing-selector {
         width: auto;
     }
 
-    
+
 
 
     .planos h2 {
@@ -51,29 +51,37 @@
 
 
     /* Grid de planos: exibe cartões em coluna quando mensal está selecionado */
-    #billing-mensal:checked ~ #planos-mensais {
+    #billing-mensal:checked~#planos-mensais {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 
+        grid-template-areas:
             "plano-card-1"
             "plano-card-2"
             "plano-card-3";
     }
-    
+
     /* Grid de planos: exibe cartões em coluna quando anual está selecionado */
-    #billing-anual:checked ~ #planos-anuais {
+    #billing-anual:checked~#planos-anuais {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 
+        grid-template-areas:
             "plano-card-1"
             "plano-card-2"
             "plano-card-3";
     }
 
     /* Áreas do Grid para os cartões */
-    .plano-card-1 { grid-area: plano-card-1; }
-    .plano-card-2 { grid-area: plano-card-2; }
-    .plano-card-3 { grid-area: plano-card-3; }
+    .plano-card-1 {
+        grid-area: plano-card-1;
+    }
+
+    .plano-card-2 {
+        grid-area: plano-card-2;
+    }
+
+    .plano-card-3 {
+        grid-area: plano-card-3;
+    }
 }
 
 /* ========================================
@@ -81,6 +89,17 @@
    ========================================
    Estilos dos planos para dispositivos móveis pequenos na horizontal
    ======================================== */
+
+
+/* HEADER INICIO */
+@media screen and (min-width:576px) and (max-width: 767px) {
+    .overlay {
+        width: 400px;
+    }
+}
+
+/* READER FIM */
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
 
@@ -101,24 +120,32 @@
 
 
     .destaque-title {
-        padding:1rem;
+        padding: 1rem;
         color: #fff;
         font-size: 1rem;
     }
 
-    #billing-mensal:checked ~ #planos-mensais,
-    #billing-anual:checked ~ #planos-anuais {
+    #billing-mensal:checked~#planos-mensais,
+    #billing-anual:checked~#planos-anuais {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 
+        grid-template-areas:
             "plano-card-1"
             "plano-card-2"
             "plano-card-3";
     }
 
-    .plano-card-1 { grid-area: plano-card-1; }
-    .plano-card-2 { grid-area: plano-card-2; }
-    .plano-card-3 { grid-area: plano-card-3; }
+    .plano-card-1 {
+        grid-area: plano-card-1;
+    }
+
+    .plano-card-2 {
+        grid-area: plano-card-2;
+    }
+
+    .plano-card-3 {
+        grid-area: plano-card-3;
+    }
 }
 
 /* ========================================
@@ -142,20 +169,36 @@
         padding: 0.50rem 1.9rem;
     }
 
-    #billing-mensal:checked ~ #planos-mensais,
-    #billing-anual:checked ~ #planos-anuais {
+    #billing-mensal:checked~#planos-mensais,
+    #billing-anual:checked~#planos-anuais {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
+        grid-template-areas:
             "plano-card-1 plano-card-2"
             "plano-card-3 plano-card-3";
     }
 
-    .plano-card-1 { grid-area: plano-card-1; }
-    .plano-card-2 { grid-area: plano-card-2; }
+    .plano-card-1 {
+        grid-area: plano-card-1;
+    }
+
+    .plano-card-2 {
+        grid-area: plano-card-2;
+    }
+
     .plano-card-3 {
         grid-area: plano-card-3;
         grid-column: span 2;
+    }
+
+    /* header */
+
+    .overlay {
+        width: 400px;
+    }
+
+    .header {
+        justify-content: space-between;
     }
 }
 
@@ -174,8 +217,8 @@
         padding: 0.50rem 1.9rem;
     }
 
-    #billing-mensal:checked ~ #planos-mensais,
-    #billing-anual:checked ~ #planos-anuais {
+    #billing-mensal:checked~#planos-mensais,
+    #billing-anual:checked~#planos-anuais {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
@@ -199,6 +242,17 @@
         font-size: 0.850rem;
         padding: 0.60rem 1.9rem;
     }
+
+    /* header */
+
+    .hamburger-menu {
+        display: none;
+    }
+
+
+    .header-desktop {
+        display: block;
+    }
 }
 
 /* ========================================
@@ -207,9 +261,9 @@
    Estilos dos planos para telas muito grandes
    ======================================== */
 @media (min-width: 1400px) {
-    .planos {               
+    .planos {
         max-width: 1340px;
-      }
+    }
 }
 
 /* ========================================
