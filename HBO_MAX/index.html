@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Assista filmes, séries e muito mais com Max. Planos acessíveis, títulos imperdíveis!">
     <meta name="keywords" content="filmes, séries, streaming, Max, HBO Max, assistir online">
-    
-    
+
+
     <!-- Favicon -->
     <link type="image/png" sizes="120x120" rel="icon" href="./assets/img/icons/hbomax.ico">
-    
+
     <!-- ===== CSS IMPORTS - ORDEM ESPECÍFICA ===== -->
-    
+
     <!-- 1. CSS GLOBAL - Reset, variáveis e base (SEMPRE PRIMEIRO) -->
     <link rel="stylesheet" href="./css/styles.css">
-    
+
     <!-- 2. COMPONENTES ESTRUTURAIS - Na ordem de aparição na página -->
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/hero.css">
@@ -23,29 +24,77 @@
     <link rel="stylesheet" href="./css/content-sections-2.css">
     <link rel="stylesheet" href="./css/content-sections-3.css">
     <link rel="stylesheet" href="./css/footer.css">
-    
+
     <!-- 3. CSS RESPONSIVO  -->
     <link rel="stylesheet" href="./css/responsive.css">
-    
+
     <!-- Preconnect para fontes (otimização de performance) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
 
-    
     <title>Assistir Filmes Online | Assistir Séries Online | Max</title>
 </head>
+
 <body>
-    
+
     <header class="header">
-        <!-- Conteúdo do header será implementado aqui -->
+        <div class="flex">
+            <div class="hamburger-menu">
+                <!-- Checkbox controla ícone e overlay -->
+                <input type="checkbox" id="checkbox" hidden />
+
+                <!-- Ícone hambúrguer -->
+                <label for="checkbox" class="container-icon border">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </label>
+
+                <!-- Menu Overlay -->
+                <div class="overlay">
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#">Opção 1</a></li>
+                            <li><a href="#">Opção 2</a></li>
+                            <li><a href="#">Opção 3</a></li>
+                            <li><a href="#">Opção 4</a></li>
+                            <li><a href="#">Opção 5</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div>
+                <a href=""><img src="/HBO_MAX/assets/img/logos/max_logo.png" alt=""></a>
+            </div>
+
+            <div class="header-desktop">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Séries de TV</a></li>
+                        <li><a href="#">Crianças e Família</a></li>
+                        <li><a href="#">Marcas</a></li>
+                        <li><a href="#">Episódios Grátis</a></li>
+                        <li><a href="#">Futebol</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="login-area">
+            <ul>
+                <li id="entrar"><a href="#">Entrar</a></li>
+                <li class="button"><a href="#">Assine agora</a></li>
+            </ul>
+        </div>
     </header>
 
     <main class="main">
         <section class="hero-section">
             <!-- Hero com grid de thumbnails e overlay -->
         </section>
-        
+
         <section class="planos">
             <!-- Seção de planos -->
             <div class="planos__wrapper container">
@@ -59,6 +108,7 @@
                 <input type="radio" id="billing-mensal" name="billing" class="planos__radio" checked>
 
                 <input type="radio" id="billing-anual" name="billing" class="planos__radio">
+
 
 
                 <div class="planos__billing-label">
@@ -90,24 +140,24 @@
                                     <li class="plano-card__feature feature-resolution">
                                         Resolução <span>Full HD</span>
                                     </li>
-                                    
-                                </ul>   
+
+                                </ul>
                             </div>
                         </header>
-                        
 
-                        
 
-                        
+
+
+
                         <div class="plano-card__princing-wrapper">
                             <div class="plano-card__pricing">
                                 <span class="plano-card__price">R$ 29,90</span>
                                 <span class="plano-card__billing-cycle">/mês</span>
                             </div>
-                            
+
                             <div class="plano-card__cta">
-                                <button class="btn-plan btn-plan--primary" 
-                                        aria-label="Escolher plano Básico com Anúncios por R$ 29,90 por mês">
+                                <button class="btn-plan btn-plan--primary"
+                                    aria-label="Escolher plano Básico com Anúncios por R$ 29,90 por mês">
                                     ESCOLHA SEU PLANO
                                 </button>
                             </div>
@@ -132,20 +182,20 @@
                                 </ul>
                             </div>
                         </header>
-                        
 
-                        
 
-                        
+
+
+
                         <div class="plano-card__princing-wrapper">
                             <div class="plano-card__pricing">
                                 <span class="plano-card__price">R$ 39,90</span>
                                 <span class="plano-card__billing-cycle">/mês</span>
                             </div>
-                            
+
                             <div class="plano-card__cta">
-                                <button class="btn-plan btn-plan--primary" 
-                                        aria-label="Escolher plano Standard por R$ 39,90 por mês">
+                                <button class="btn-plan btn-plan--primary"
+                                    aria-label="Escolher plano Standard por R$ 39,90 por mês">
                                     ESCOLHA SEU PLANO
                                 </button>
                             </div>
@@ -170,30 +220,29 @@
                                     <li class="plano-card__feature feature-download">
                                         <span>100 downloads</span> para curtir off-line
                                     </li>
-                                </ul>  
+                                </ul>
                             </div>
                         </header>
-                        
+
 
                         <div class="plano-card__princing-wrapper">
                             <div class="plano-card__pricing">
                                 <span class="plano-card__price">R$ 55,90</span>
                                 <span class="plano-card__billing-cycle">/mês</span>
                             </div>
-                            
+
                             <div class="plano-card__cta">
-                                <button class="btn-plan" 
-                                        aria-label="Escolher plano Platinum por R$ 55,90 por mês">
+                                <button class="btn-plan" aria-label="Escolher plano Platinum por R$ 55,90 por mês">
                                     ESCOLHA SEU PLANO
                                 </button>
                             </div>
                         </div>
-                        
-                        
+
+
                     </article>
 
                 </div>
-                
+
 
                 <!-- Planos Anuais -->
                 <div class="planos__container" id="planos-anuais">
@@ -201,7 +250,7 @@
                         <header class="plano-card__header">
                             <h3 class="plano-card__title">Básico com Anúncios</h3>
                             <div class="plano-card__divider" role="separator"></div>
-                        
+
                             <div class="plano-card__features">
                                 <ul class="plano-card__feature-list">
                                     <li class="plano-card__feature feature-stream">
@@ -210,33 +259,33 @@
                                     <li class="plano-card__feature feature-resolution">
                                         Resolução <span>Full HD</span>
                                     </li>
-                                </ul>   
+                                </ul>
                             </div>
                         </header>
-                        
 
-                        
+
+
                         <div class="plano-card__princing-wrapper">
                             <div class="plano-card__pricing">
                                 <span class="plano-card__price">12x R$ 18,90</span>
                                 <span class="plano-card__billing-cycle">/mês</span>
                                 <p class="plano-card__total">Preço total anual R$ 226,80</p>
                             </div>
-                            
+
                             <div class="plano-card__cta">
-                                <button class="btn-plan btn-plan--primary" 
-                                        aria-label="Escolher plano Básico anual por 12x R$ 18,90">
+                                <button class="btn-plan btn-plan--primary"
+                                    aria-label="Escolher plano Básico anual por 12x R$ 18,90">
                                     ESCOLHA SEU PLANO
                                 </button>
                             </div>
                         </div>
                     </article>
-                    
+
                     <article class="plano-card">
                         <header class="plano-card__header">
                             <h3 class="plano-card__title">Standard</h3>
                             <div class="plano-card__divider" role="separator"></div>
-                        
+
                             <div class="plano-card__features">
                                 <ul class="plano-card__feature-list">
                                     <li class="plano-card__feature feature-stream">
@@ -248,22 +297,22 @@
                                     <li class="plano-card__feature feature-download">
                                         <span>30 downloads</span> para curtir off-line
                                     </li>
-                                </ul>   
+                                </ul>
                             </div>
                         </header>
-                        
 
-                        
+
+
                         <div class="plano-card__princing-wrapper">
                             <div class="plano-card__pricing">
                                 <span class="plano-card__price">12x R$ 29,90</span>
                                 <span class="plano-card__billing-cycle">/mês</span>
                                 <p class="plano-card__total">Preço total anual R$ 358,80</p>
                             </div>
-                            
+
                             <div class="plano-card__cta">
-                                <button class="btn-plan btn-plan--primary" 
-                                        aria-label="Escolher plano Básico anual por 12x R$ 29,90">
+                                <button class="btn-plan btn-plan--primary"
+                                    aria-label="Escolher plano Básico anual por 12x R$ 29,90">
                                     ESCOLHA SEU PLANO
                                 </button>
                             </div>
@@ -274,7 +323,7 @@
                         <header class="plano-card__header">
                             <h3 class="plano-card__title">Platinum</h3>
                             <div class="plano-card__divider" role="separator"></div>
-                        
+
                             <div class="plano-card__features">
                                 <ul class="plano-card__feature-list">
                                     <li class="plano-card__feature feature-stream">
@@ -289,46 +338,53 @@
                                     <li class="plano-card__feature feature-download">
                                         <span>100 downloads</span> para curtir off-line
                                     </li>
-                                </ul>   
+                                </ul>
                             </div>
                         </header>
-                        
 
-                        
+
+
                         <div class="plano-card__princing-wrapper">
                             <div class="plano-card__pricing">
                                 <span class="plano-card__price">12x R$ 39,90</span>
                                 <span class="plano-card__billing-cycle">/mês</span>
                                 <p class="plano-card__total">Preço total anual R$ 478,80</p>
                             </div>
-                            
+
                             <div class="plano-card__cta">
-                                <button class="btn-plan btn-plan--primary" 
-                                        aria-label="Escolher plano Básico anual por 12x R$ 39,90">
+                                <button class="btn-plan btn-plan--primary"
+                                    aria-label="Escolher plano Básico anual por 12x R$ 39,90">
                                     ESCOLHA SEU PLANO
                                 </button>
                             </div>
                         </div>
                     </article>
 
-                    
+
                 </div>
 
                 <div class="planos__mais-info">
-                    <small>*Full HD, 4K Ultra HD e Dolby Atmos não estão disponíveis em todo o conteúdo de cada plano. O conteúdo ao vivo nos planos Standard e Platinum pode conter anúncios. Downloads podem ter restrições em algumas categorias de conteúdo. Saiba mais em: <a href="https://help.max.com/plans" target="_blank" rel="noopener noreferrer">
-                        help.max.com/plans
-                    </a> </small>
+                    <small>*Full HD, 4K Ultra HD e Dolby Atmos não estão disponíveis em todo o conteúdo de cada plano. O
+                        conteúdo ao vivo nos planos Standard e Platinum pode conter anúncios. Downloads podem ter
+                        restrições em algumas categorias de conteúdo. Saiba mais em: <a
+                            href="https://help.max.com/plans" target="_blank" rel="noopener noreferrer">
+                            help.max.com/plans
+                        </a> </small>
                 </div>
 
                 <div class="planos__mais-info-anual">
-                    <small>*Full HD, 4K Ultra HD e Dolby Atmos não estão disponíveis em todo o conteúdo de cada plano. O conteúdo ao vivo nos planos Standard e Platinum pode conter anúncios. Downloads podem ter restrições em algumas categorias de conteúdo. Saiba mais em: <a href="https://help.max.com/plans" target="_blank" rel="noopener noreferrer">
-                        help.max.com/plans
-                    </a> Economia calculada com base no preço da assinatura anual vs. a assinatura mensal regular ao longo de 12 meses.</small>
+                    <small>*Full HD, 4K Ultra HD e Dolby Atmos não estão disponíveis em todo o conteúdo de cada plano. O
+                        conteúdo ao vivo nos planos Standard e Platinum pode conter anúncios. Downloads podem ter
+                        restrições em algumas categorias de conteúdo. Saiba mais em: <a
+                            href="https://help.max.com/plans" target="_blank" rel="noopener noreferrer">
+                            help.max.com/plans
+                        </a> Economia calculada com base no preço da assinatura anual vs. a assinatura mensal regular ao
+                        longo de 12 meses.</small>
                 </div>
 
             </div>
         </section>
-        
+
         <section class="content-group">
             <section class="content-section content-section--destacados">
                 <!-- "As grandes histórias, os dramas imperdíveis..." -->
@@ -456,9 +512,59 @@
 
     <footer class="footer">
         <section class="footer-section">
-            <!-- Links, informações legais, redes sociais -->
+            <ul class="first-footer-container">
+                <li><a href="">AGORA NA MAX</a></li>
+                <li><a href="">FILMES</a></li>
+                <li><a href="">SÉRIES</a></li>
+                <li><a href="">EPISÓDIOS GRÁTIS</a></li>
+                <li><a href="">FUTEBOL</a></li>
+                <li><a href="">CRIANÇA E FAMÍLIA</a></li>
+                <li><a href="">FILMES E SÉRIES PREMIADOS</a></li>               
+            </ul>
+            
+            <ul class="second-footer-container">
+                <li><a href="">AJUDA</a></li>                                
+            </ul>            
+            
+            <ul class="third-footer-container">
+                <li><a href="">Acessibilidade</a></li>
+                <li><a href="">Política De Privacidade</a></li>
+                <li><a href="">Modo Infantil</a></li>
+                <li><a href="">Termos De Uso</a></li>
+                <li><a href="">Gerenciar Preferências De Cookies</a></li>
+            </ul>
+
+            <ul class="fourth-footer-container">
+                <li><a href="">Comunicado Para Imprensa</a></li>                                
+            </ul>
+
+            <div class="copyright">
+                <p>©2025 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. Max é usado sob licença.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="network">
+                <div>
+                    <a href="">
+                        <img alt="Facebook" src="https://beam-images.warnermediacdn.com/2023-03/social_iconfacebook.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com" class="img-anim-in">
+                    </a>                    
+                </div>
+
+                <div>
+                    <a href="">
+                        <img alt="X" src="https://beam-images.warnermediacdn.com/2024-02/x.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com" style="width: 15px;" class="img-anim-in">
+                    </a>                    
+                </div>
+
+                <div>
+                    <a href="#">
+                        <img alt="Tiktok" src="https://beam-images.warnermediacdn.com/2024-02/tik_tok.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com" style="width: 20px;" class="img-anim-in">
+                    </a>                    
+                </div>
+            </div>
         </section>
     </footer>
-
 </body>
+
 </html>

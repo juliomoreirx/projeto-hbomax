@@ -1,0 +1,97 @@
+/*=======================================================
+    FOOTER STYLING -    Estilização do Footer
+=======================================================*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 14.5rem;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.footer-section {
+    width: 65rem;
+}
+
+.first-footer-container {
+    display: flex;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.first-footer-container li {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+}
+
+.first-footer-container li:hover {
+    background-color: var(--color-background-tertiary);
+    border-radius: 10px;
+}
+
+.second-footer-container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.second-footer-container li {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+}
+
+.second-footer-container li:hover {
+    background-color: var(--color-background-tertiary);
+    border-radius: 10px;
+}
+
+.third-footer-container {
+    display: flex;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.third-footer-container li {
+    padding: 10px 25px;
+    font-size: 0.8rem;
+}
+
+.third-footer-container li:hover {
+    background-color: var(--color-background-tertiary);
+    border-radius: 10px;
+}
+
+.fourth-footer-container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fourth-footer-container li {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+}
+
+.fourth-footer-container li:hover {
+    background-color: var(--color-background-tertiary);
+    border-radius: 10px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 0.7rem;
+    padding: 1rem;
+}
+
+.network {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
