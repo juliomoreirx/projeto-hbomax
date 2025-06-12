@@ -19,6 +19,20 @@
 
    ======================================== */
 
+/* Header inicio */
+@media screen and (min-width: 0) and (max-width: 575px) {
+
+    .login-area ul li#entrar {
+        display: none;
+    }
+
+    .button {
+        min-width: 200px;
+    }
+}
+
+/* Header fim */
+
 
 @media screen and (min-width: 320px) and (max-width: 411px) {
 
@@ -96,12 +110,18 @@
     .overlay {
         width: 400px;
     }
+
+    .login-area li#entrar {
+        display: none;
+    }
+
 }
+
+
 
 /* READER FIM */
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-
 
 
     /* Opções do toggle (mensal/anual) */
