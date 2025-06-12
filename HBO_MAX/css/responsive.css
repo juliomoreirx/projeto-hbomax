@@ -100,6 +100,12 @@
     }
 
 
+    .destaque-title {
+        padding:1rem;
+        color: #fff;
+        font-size: 1rem;
+    }
+
     #billing-mensal:checked ~ #planos-mensais,
     #billing-anual:checked ~ #planos-anuais {
         display: grid;
