@@ -6,15 +6,19 @@
 
 .header {
     border: 1px solid green;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 3.5rem;
     display: flex;
     justify-content: space-between;
     background: var(--color-background-primary);
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-button);
+    font-size: var(--font-size-caption);
 
     img {
-        max-width: 120px;
+        max-width: 130px;
         padding: 0.5rem;
         margin: 5px 0.5rem;
     }
@@ -38,8 +42,8 @@
         }
 
         ul li {
-            padding: 1rem;
-            margin: auto 0.5rem;
+            padding: var(--space-sm);
+            margin: 8px 0;
             /* border: 1px solid red; */
         }
     }
@@ -153,13 +157,16 @@
 .header-desktop {
     display: none;
     justify-content: space-between;
+    font-weight: var(--font-weight-extrabold);
+    font-size: var(--font-size-caption);
 
     .menu ul {
         display: flex;
         flex-direction: row;
 
         li {
-            padding: 1rem;
+            padding: var(--space-sm);
+            margin: 10px 0;
             /* border: 1px solid red; */
 
         }

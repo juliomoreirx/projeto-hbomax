@@ -37,57 +37,58 @@
 </head>
 
 <body>
+    <header class="fixed">
+        <div class="header">
+            <div class="flex">
+                <div class="hamburger-menu">
+                    <!-- Checkbox controla ícone e overlay -->
+                    <input type="checkbox" id="checkbox" hidden />
 
-    <header class="header">
-        <div class="flex">
-            <div class="hamburger-menu">
-                <!-- Checkbox controla ícone e overlay -->
-                <input type="checkbox" id="checkbox" hidden />
+                    <!-- Ícone hambúrguer -->
+                    <label for="checkbox" class="container-icon border">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </label>
 
-                <!-- Ícone hambúrguer -->
-                <label for="checkbox" class="container-icon border">
-                    <div class="line line-1"></div>
-                    <div class="line line-2"></div>
-                    <div class="line line-3"></div>
-                </label>
+                    <!-- Menu Overlay -->
+                    <div class="overlay">
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="#">Opção 1</a></li>
+                                <li><a href="#">Opção 2</a></li>
+                                <li><a href="#">Opção 3</a></li>
+                                <li><a href="#">Opção 4</a></li>
+                                <li><a href="#">Opção 5</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
 
-                <!-- Menu Overlay -->
-                <div class="overlay">
+                <div>
+                    <a href=""><img src="/HBO_MAX/assets/img/logos/max_logo.png" alt=""></a>
+                </div>
+
+                <div class="header-desktop">
                     <nav class="menu">
                         <ul>
-                            <li><a href="#">Opção 1</a></li>
-                            <li><a href="#">Opção 2</a></li>
-                            <li><a href="#">Opção 3</a></li>
-                            <li><a href="#">Opção 4</a></li>
-                            <li><a href="#">Opção 5</a></li>
+                            <li><a href="#">Filmes</a></li>
+                            <li><a href="#">Séries de TV</a></li>
+                            <li><a href="#">Crianças e Família</a></li>
+                            <li><a href="#">Marcas</a></li>
+                            <li><a href="#">Episódios Grátis</a></li>
+                            <li><a href="#">Futebol</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
 
-            <div>
-                <a href=""><img src="/HBO_MAX/assets/img/logos/max_logo.png" alt=""></a>
+            <div class="login-area">
+                <ul>
+                    <li id="entrar"><a href="#">Entrar</a></li>
+                    <li class="button"><a href="#">Assine agora</a></li>
+                </ul>
             </div>
-
-            <div class="header-desktop">
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#">Filmes</a></li>
-                        <li><a href="#">Séries de TV</a></li>
-                        <li><a href="#">Crianças e Família</a></li>
-                        <li><a href="#">Marcas</a></li>
-                        <li><a href="#">Episódios Grátis</a></li>
-                        <li><a href="#">Futebol</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
-        <div class="login-area">
-            <ul>
-                <li id="entrar"><a href="#">Entrar</a></li>
-                <li class="button"><a href="#">Assine agora</a></li>
-            </ul>
         </div>
     </header>
 
