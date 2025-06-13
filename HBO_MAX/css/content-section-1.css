@@ -1,6 +1,7 @@
 .destacados-wrapper {
     overflow-x: auto;
     margin-bottom: 1rem;
+
     scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.1);;
 }
 
