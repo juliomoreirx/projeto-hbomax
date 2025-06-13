@@ -1,0 +1,15 @@
+.max-svg {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+    
+.svg-container {
+  width: 18.75rem;
+}
+
+.svg-container svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
