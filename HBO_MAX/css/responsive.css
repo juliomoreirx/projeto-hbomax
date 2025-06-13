@@ -19,48 +19,42 @@
 
    ======================================== */
 
-/* Menu Hamburguer */
-@media screen and (min-width: 575px) {
+/* Header inicio */
+@media screen and (min-width: 0) and (max-width: 575px) {
 
-    /* Desativa o menu mobile */
-    /* .hamburger-menu {
+    .login-area ul li#entrar {
         display: none;
-    } */
+    }
 
+    .button {
+        min-width: 200px;
+    }
 }
+
+/* Header fim */
 
 
 @media screen and (min-width: 320px) and (max-width: 411px) {
-    /* Container principal dos planos */
 
 
-    /* Cartões individuais dos planos */
 
 
-    /* Seletor de cobrança (ex: mensal/anual) */
-    .planos__billing-selector {
-        width: auto;
-        height: 3rem;
-        background-color: #262626;
-        margin: 1rem auto;
-        border-radius: 6.25rem;
-    }
 
-
-    /* Opções do toggle (mensal/anual) */
+    
+    
+    
+    
     .planos__toggle-option {
         width: auto;
-        font-size: 0.620rem;
-        padding: 0.7rem 2rem;
+        font-size: 0.850rem;
+        padding: auto auto;
 
     }
 
-    /* Label do seletor de cobrança */
-    .planos__billing-label {
-        font-size: 0.675rem;
-        font-weight: 700;
-        left: 3.5rem;
+    .planos__billing-selector {
+        width: auto;
     }
+
 
 
 
@@ -122,11 +116,31 @@
     .overlay {
         width: 400px;
     }
+
+    .login-area li#entrar {
+        display: none;
+    }
+
 }
+
+
 
 /* READER FIM */
 
-@media screen and (min-width: 412px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+
+    .destaque-title {
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+
+    /* Opções do toggle (mensal/anual) */
+    .planos__toggle-option {
+        width: auto;
+        font-size: 0.850rem;
+        padding: 0.50rem 1.9rem;
+    }
 
     .planos h2 {
         font-size: 1.285rem;
@@ -135,18 +149,8 @@
         margin: 1.5rem 0 1rem;
     }
 
-    /* Label do seletor de cobrança */
-    .planos__billing-label {
-        font-size: 0.675rem;
-        font-weight: 700;
 
-    }
 
-    .planos__toggle-option {
-        width: auto;
-        font-size: 0.820rem;
-        padding: 0.55rem 2rem;
-    }
 
     #billing-mensal:checked~#planos-mensais,
     #billing-anual:checked~#planos-anuais {
@@ -176,16 +180,6 @@
    ========================================
    Estilos dos planos para tablets
    ======================================== */
-@media screen and (min-width: 768px) {
-    .overlay {
-        width: 400px;
-    }
-
-    .header {
-        justify-content: space-between;
-    }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
     .planos h2 {
@@ -194,17 +188,12 @@
         margin: 1.5rem 0 1rem;
     }
 
-    /* Label do seletor de cobrança */
-    .planos__billing-label {
-        font-size: 0.675rem;
-        font-weight: 700;
 
-    }
-
+    /* Opções do toggle (mensal/anual) */
     .planos__toggle-option {
         width: auto;
-        font-size: 0.820rem;
-        padding: 0.60rem 2.1rem;
+        font-size: 0.850rem;
+        padding: 0.50rem 1.9rem;
     }
 
     #billing-mensal:checked~#planos-mensais,
@@ -228,6 +217,16 @@
         grid-area: plano-card-3;
         grid-column: span 2;
     }
+
+    /* header */
+
+    .overlay {
+        width: 400px;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
 }
 
 /* ========================================
@@ -235,26 +234,9 @@
    ========================================
    Estilos dos planos para desktops médios
    ======================================== */
-@media screen and (min-width: 1199px) {
-    .hamburger-menu {
-        display: none;
-    }
-
-
-    .header-desktop {
-        display: block;
-    }
-}
-
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
 
 
-    /* Label do seletor de cobrança */
-    .planos__billing-label {
-        font-size: 0.675rem;
-        font-weight: 700;
-
-    }
 
     .planos__toggle-option {
         width: auto;
@@ -281,16 +263,22 @@
 @media screen and (min-width: 1200px) {
     /* Adicione estilos específicos para telas grandes aqui, se necessário */
 
-    /* Label do seletor de cobrança */
-    .planos__billing-label {
-        font-size: 0.675rem;
-        font-weight: 700;
-    }
 
     .planos__toggle-option {
         width: auto;
         font-size: 0.850rem;
         padding: 0.60rem 1.9rem;
+    }
+
+    /* header */
+
+    .hamburger-menu {
+        display: none;
+    }
+
+
+    .header-desktop {
+        display: block;
     }
 }
 
