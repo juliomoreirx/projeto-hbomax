@@ -1,27 +1,22 @@
 .destacados-wrapper {
     overflow-x: auto;
     margin-bottom: 1rem;
-    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.1);
+    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.1);;
 }
 
+
+
 .destacados-container {
-    min-width: 125rem;
     display: grid;
     grid-template-columns: repeat(9, minmax(208px, 1fr)); 
-    
 }
 
 .item-img {
     background-size: cover;
-    background-position: center;
-    width: 100%;
-    min-height: 45rem;
-    border: 1px solid #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-
+    background-position: top center;
+    width: calc(100% - 2px);
+    min-height: 500px; 
+    height: auto;
 }
 
 .familia {
@@ -62,6 +57,9 @@
 
 
 
+
+
+
 .item-img span{
     display: flex;
     align-items: center;
@@ -74,9 +72,14 @@
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: 0.8px;
-    line-height: 3.5rem;
+    line-height: 2.5rem;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.info {
+    position: relative;
+    top: 410px;
 }
 
 .info h3{
@@ -100,7 +103,7 @@
 .item-selo{
     color: rgba(231, 231, 231, 0.8);
     padding: 0.5rem 1rem;
-    font-size: 0.65rem;
+    font-size: 0.60rem;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: -0.5rem;
@@ -115,3 +118,4 @@
     line-height: 20.8px;
     margin-bottom: 0.5rem;
 }
+
