@@ -12,14 +12,15 @@
 }
 
 .footer-section {
-    width: 65rem;
+    width: 72rem;
 }
 
 .first-footer-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 0.85rem;
     font-weight: 700;
+    width: 100%;
 }
 
 .first-footer-container li {
@@ -95,3 +96,4 @@
     padding: 1rem;
     margin-bottom: 1rem;
 }
+
