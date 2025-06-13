@@ -38,6 +38,12 @@
 
 
 
+
+
+    
+    
+    
+    
     .planos__toggle-option {
         width: auto;
         font-size: 0.850rem;
@@ -124,6 +130,11 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
 
+    .destaque-title {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
     /* Opções do toggle (mensal/anual) */
     .planos__toggle-option {
         width: auto;
@@ -139,11 +150,7 @@
     }
 
 
-    .destaque-title {
-        padding: 1rem;
-        color: #fff;
-        font-size: 1rem;
-    }
+
 
     #billing-mensal:checked~#planos-mensais,
     #billing-anual:checked~#planos-anuais {
