@@ -29,15 +29,17 @@
 
 /* Label do seletor de cobrança */
 .planos__billing-label {
-    font-size: var(--plans-billing-label-font-size);
+    margin-bottom: -1.5rem;
+}
+
+.planos__billing-text {
     font-weight: var(--plans-billing-label-font-weight);
     color: var(--plans-billing-label-color);
+    font-size: 0.675rem;
     position: relative;
-    display: var(--plans-billing-label-display, flex);
-    justify-content: var(--plans-billing-label-justify, center);
-    left: var(--plans-billing-label-left, 4rem);
-    margin-bottom: -1rem;
+    left: 51%;
 }
+
 
 /* Seletor de cobrança */
 .planos__billing-selector {
@@ -67,7 +69,6 @@
     transition: var(--transition-normal);
     padding: var(--plans-toggle-option-padding);
     border-radius: var(--plans-toggle-option-radius);
-    
 }
 
 .planos__toggle-option:hover {

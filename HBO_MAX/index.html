@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no">
-    <meta name="description"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no
+    <meta name=" description"
         content="Assista filmes, séries e muito mais com Max. Planos acessíveis, títulos imperdíveis!">
     <meta name="keywords" content="filmes, séries, streaming, Max, HBO Max, assistir online">
 
@@ -21,7 +21,12 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/plans.css">
+    
     <link rel="stylesheet" href="./css/content-sections.css">
+    <link rel="stylesheet" href="/HBO_MAX/css/faq.css">
+    <link rel="stylesheet" href="./css/content-section-1.css">
+    <link rel="stylesheet" href="./css/content-sections-2.css">
+    <link rel="stylesheet" href="./css/content-sections-3.css">     
     <link rel="stylesheet" href="./css/footer.css">
 
     <!-- 3. CSS RESPONSIVO  -->
@@ -35,57 +40,58 @@
 </head>
 
 <body>
+    <header class="fixed">
+        <div class="header">
+            <div class="flex">
+                <div class="hamburger-menu">
+                    <!-- Checkbox controla ícone e overlay -->
+                    <input type="checkbox" id="checkbox" hidden />
 
-    <header class="header">
-        <div class="flex">
-            <div class="hamburger-menu">
-                <!-- Checkbox controla ícone e overlay -->
-                <input type="checkbox" id="checkbox" hidden />
+                    <!-- Ícone hambúrguer -->
+                    <label for="checkbox" class="container-icon border">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </label>
 
-                <!-- Ícone hambúrguer -->
-                <label for="checkbox" class="container-icon border">
-                    <div class="line line-1"></div>
-                    <div class="line line-2"></div>
-                    <div class="line line-3"></div>
-                </label>
+                    <!-- Menu Overlay -->
+                    <div class="overlay">
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="#">Opção 1</a></li>
+                                <li><a href="#">Opção 2</a></li>
+                                <li><a href="#">Opção 3</a></li>
+                                <li><a href="#">Opção 4</a></li>
+                                <li><a href="#">Opção 5</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
 
-                <!-- Menu Overlay -->
-                <div class="overlay">
+                <div>
+                    <a href=""><img src="/HBO_MAX/assets/img/logos/max_logo.png" alt=""></a>
+                </div>
+
+                <div class="header-desktop">
                     <nav class="menu">
                         <ul>
-                            <li><a href="#">Opção 1</a></li>
-                            <li><a href="#">Opção 2</a></li>
-                            <li><a href="#">Opção 3</a></li>
-                            <li><a href="#">Opção 4</a></li>
-                            <li><a href="#">Opção 5</a></li>
+                            <li><a href="#">Filmes</a></li>
+                            <li><a href="#">Séries de TV</a></li>
+                            <li><a href="#">Crianças e Família</a></li>
+                            <li><a href="#">Marcas</a></li>
+                            <li><a href="#">Episódios Grátis</a></li>
+                            <li><a href="#">Futebol</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
 
-            <div>
-                <a href=""><img src="/HBO_MAX/assets/img/logos/max_logo.png" alt=""></a>
+            <div class="login-area">
+                <ul>
+                    <li id="entrar"><a href="#">Entrar</a></li>
+                    <li class="button"><a href="#">Assine agora</a></li>
+                </ul>
             </div>
-
-            <div class="header-desktop">
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#">Filmes</a></li>
-                        <li><a href="#">Séries de TV</a></li>
-                        <li><a href="#">Crianças e Família</a></li>
-                        <li><a href="#">Marcas</a></li>
-                        <li><a href="#">Episódios Grátis</a></li>
-                        <li><a href="#">Futebol</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
-        <div class="login-area">
-            <ul>
-                <li id="entrar"><a href="#">Entrar</a></li>
-                <li class="button"><a href="#">Assine agora</a></li>
-            </ul>
         </div>
     </header>
 
@@ -102,19 +108,27 @@
                     <h2 class="planos__title text-heading-2">ESCOLHA O MELHOR PLANO PARA VOCÊ</h2>
                 </div>
 
-                <div class="planos__billing-label">
-                    <span class="planos__billing-text">ECONIMIZE ATÉ 36%</span>
-                </div>
+
 
                 <input type="radio" id="billing-mensal" name="billing" class="planos__radio" checked>
 
                 <input type="radio" id="billing-anual" name="billing" class="planos__radio">
 
+
+
+                <div class="planos__billing-label">
+                    <span class="planos__billing-text">ECONIMIZE ATÉ 36%</span>
+                </div>
+
                 <div class="planos__billing-selector">
+
+
                     <div class="planos__toggle" role="tablist">
                         <label for="billing-mensal" class="planos__toggle-option">MENSAL</label>
+
                         <label for="billing-anual" class="planos__toggle-option">ANUAL PARCELADO</label>
                     </div>
+
                 </div>
 
                 <!-- Planos Mensais -->
@@ -379,6 +393,120 @@
         <section class="content-group">
             <section class="content-section content-section--destacados">
                 <!-- "As grandes histórias, os dramas imperdíveis..." -->
+                <h2 class="destaque-title">As grandes histórias, os dramas imperdíveis e as melhores comédias estão na
+                    Max.</h2>
+                <div class="destacados-wrapper">
+
+
+
+                    <div class="destacados-container">
+
+
+                        <figure class="item-img familia">
+
+                            <figcaption>
+                                <div class="info">
+                                    <span class="item-categoria">CRIANÇAS E FAMÍLIA</span>
+                                    <span class="item-selo"></span>
+                                    <h3 class="item-titulo">PEPPA PIG
+                                    </h3>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item-img reality">
+
+                            <figcaption>
+                                <div class="info">
+                                    <span class="item-categoria">REALITY</span>
+                                    <span class="item-selo"></span>
+                                    <h3 class="item-titulo">Largados e Pelados
+                                    </h3>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item-img novelas">
+
+                            <figcaption>
+                                <div class="info">
+                                    <span class="item-categoria">NOVELAS</span>
+                                    <span class="item-selo">MAX ORIGINAL</span>
+                                    <h3 class="item-titulo">Será Isso Amor?</h3>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item-img filmes">
+
+                            <figcaption>
+                                <div class="info">
+                                    <span class="item-categoria">FILMES</span>
+                                    <span class="item-selo">MAX ORIGINAL</span>
+                                    <h3 class="item-titulo">GODZILLA VS KONG</h3>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item-img drama">
+
+                            <figcaption>
+                                <div class="info">
+                                    <span class="item-categoria">DRAMA</span>
+                                    <span class="item-selo">HBO ORIGINAL</span>
+                                    <h3 class="item-titulo">A GUERRA DOS TRONOS</h3>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item-img acao">
+
+                            <figcaption>
+                                <div class="info">
+                                    <span class="item-categoria">AÇÃO</span>
+                                    <span class="item-selo">HBO ORIGINAL</span>
+                                    <h3 class="item-titulo">THE LAST OF US
+                                    </h3>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item-img comedia">
+
+                            <figcaption>
+                                <div class="info">
+                                    <span class="item-categoria">COMÉDIA</span>
+                                    <span class="item-selo"></span>
+                                    <h3 class="item-titulo">THE BIG BANG THEORY</h3>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item-img documentarios">
+
+                            <figcaption>
+                                <div class="info">
+                                    <span class="item-categoria">DOCUMENTÁRIOS</span>
+                                    <span class="item-selo"></span>
+                                    <h3 class="item-titulo">ROMÁRIO, O CARA</h3>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="item-img futebol">
+
+                            <figcaption>
+                                <div class="info">
+                                    <span class="item-categoria">FUTEBOL</span>
+                                    <span class="item-selo"></span>
+                                    <h3 class="item-titulo">CHAMPIONS LEAGUE</h3>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+
             </section>
             <section class="content-section content-section--estreias">
                 <!-- "Estreias que vão dar o que falar" -->
@@ -387,12 +515,142 @@
                 <!-- "Descubra o melhor de" - Ação, Comédia, etc -->
             </section>
         </section>
-
-        <section class="faq">
-            <!-- FAQ com acordeão -->
-        </section>
-    </main>
-
+        <!------------------------------------------------------------------------------------------
+                                            START FAQ SECTION
+        ------------------------------------------------------------------------------------------->
+        <section class="faq-container">
+            
+            <div class="faq-item">
+                <input type="checkbox" id="faq1">
+                <label class="faq-question" for="faq1">
+                    Como eu faço para assinar? 
+                    <span class="faq-arrow"><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt=""></span>
+                </label> <hr>
+                <section class="faq-answer">
+                <p>
+                    A Max está disponível para assinatura aqui na max.com e também através dos nossos provedores de assinatura na região.
+                    Se você tem a HBO no seu pacote de televisão por assinatura e/ou serviço de internet, você terá acesso à Max sem custo adicional. Você pode entrar em contato com sua operadora local para obter mais detalhes.
+                </p>
+                </section>
+            </div>
+        
+            <div class="faq-item">
+                <input type="checkbox" id="faq2">
+                <label class="faq-question" for="faq2">
+                    Onde a Max está disponível?
+                    <span class="faq-arrow"><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt=""></span>
+                </label> <hr>
+                <div class="faq-answer">
+                    <p>
+                        Nossa plataforma aprimorada está disponível para Anguila, Antígua e Barbuda, Argentina, Aruba, Bahamas, Barbados, Belize, Bolívia, Brasil, Chile, Colômbia, Costa Rica, Curaçao, Dominica, Equador, El Salvador, Granada, Guatemala, Guiana, Haiti, Honduras, Ilhas Virgens Britânicas, Ilhas Cayman, Jamaica, México, Montserrat, Nicarágua, Panamá, Paraguai, Peru, República Dominicana, Saint Kitts e Nevis, Santa Lúcia, São Vicente e Granadinas, Suriname, Trinidad e Tobago, Turks e Caicos, Uruguai, Venezuela e Estados Unidos.
+                    </p>            
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <input type="checkbox" id="faq3">
+                <label class="faq-question" for="faq3">
+                    Quanto custa a Max?
+                    <span class="faq-arrow"><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt=""></span>
+                </label> <hr>
+                <div class="faq-answer">
+                    <p>
+                        Novos usuários podem escolher entre três planos, dependendo de suas preferências:                    
+                    </p>
+                    <p>
+                        Plano Básico com Anúncios: A assinatura mensal custa R$29,90 e a anual custa R$226,80.
+                    </p>
+                    <ul class="list">
+                        <li>Assista com anúncios limitados</li>
+                        <li>2 dispositivos ao mesmo tempo</li>
+                        <li>Resolução Full HD</li>
+                    </ul>  
+                    
+                    <p>
+                        Plano Standard: A assinatura mensal custa R$39,90 e a anual custa R$358,80.
+                    </p>
+                    <ul class="list">
+                        <li>2 dispositivos ao mesmo tempo</li>
+                        <li>Resolução Full HD</li>
+                        <li>30 downloads para curtir off-line</li>
+                    </ul>
+                    
+                    <p>
+                        Plano Platinum: A assinatura mensal custa R$55,90 e a anual custa R$ 478,80.
+                    </p>
+                    <ul class="list">
+                        <li>4 dispositivos ao mesmo tempo</li>
+                        <li>Resolução Full HD e 4K Ultra HD*</li>
+                        <li>Aúdio Dolby Atmos*</li>
+                        <li>100 downloads para curtir off-line</li>
+                    </ul>
+                    
+                    <caption>
+                        *Full HD, 4K Ultra HD e Dolby Atmos não estão disponíveis em todo o conteúdo de cada plano. O conteúdo ao vivo nos planos Standard e Platinum pode conter anúncios. Downloads podem ter restrições em algumas categorias de conteúdo. Saiba mais em help.max.com/plans
+                    </caption>
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <input type="checkbox" id="faq4">
+                <label class="faq-question" for="faq4">
+                    Em quais dispositivos a Max está disponível?
+                    <span class="faq-arrow"><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt=""></span>
+                </label> <hr>
+                <div class="faq-answer">
+                    <h3>TV</h3>            
+                    <ul class="list">
+                        <li>Amazon Fire</li>
+                        <li>Android TV</li>
+                        <li>Apple TV</li>
+                        <li>Chromecast</li>
+                        <li>LG</li>
+                        <li>Roku</li>
+                        <li>Samsung</li>
+                    </ul>
+                    
+                    <h3>Computadores</h3>            
+                    <ul class="list">
+                        <li>Chrome OS</li>
+                        <li>Mac OS</li>
+                        <li>Windows PC</li>                    
+                    </ul>
+                    
+                    <h3>Vídeo-games</h3>            
+                    <ul class="list">
+                        <li>PS4</li>
+                        <li>PS5</li>
+                        <li>Xbox One</li>
+                        <li>Xbox Series X|S</li>                    
+                    </ul>
+                    
+                    <h3>Smartphones & Tablets</h3>            
+                    <ul class="list">
+                        <li>Amazon Fire Tablet</li>
+                        <li><a href="#">Android Phone & Tablet</a></li>
+                        <li><a href="#">iPhone & iPad</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <input type="checkbox" id="faq5">
+                <label class="faq-question" for="faq5">
+                    Eu tenho HBO. Eu tenho acesso à Max?
+                    <span class="faq-arrow"><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt=""></span>
+                </label> <hr>
+                <div class="faq-answer">
+                    A Max está incluída sem custo adicional na assinatura dos canais da HBO por meio de algumas operadoras de TV paga participantes em toda a região. Você pode entrar em contato com sua operadora local para obter mais detalhes.
+                </div>
+            </div>
+        </section>    
+    <!----------------------------------------------------------------------------------------------
+                                         END FAQ SECTION
+    ----------------------------------------------------------------------------------------------->
+    </main>    
+    <!----------------------------------------------------------------------------------------------
+                                       START FOOTER SECTION
+    ----------------------------------------------------------------------------------------------->
     <footer class="footer">
         <section class="footer-section">
             <ul class="first-footer-container">
@@ -402,13 +660,13 @@
                 <li><a href="">EPISÓDIOS GRÁTIS</a></li>
                 <li><a href="">FUTEBOL</a></li>
                 <li><a href="">CRIANÇA E FAMÍLIA</a></li>
-                <li><a href="">FILMES E SÉRIES PREMIADOS</a></li>               
+                <li><a href="">FILMES E SÉRIES PREMIADOS</a></li>
             </ul>
-            
+
             <ul class="second-footer-container">
-                <li><a href="">AJUDA</a></li>                                
-            </ul>            
-            
+                <li><a href="">AJUDA</a></li>
+            </ul>
+
             <ul class="third-footer-container">
                 <li><a href="">Acessibilidade</a></li>
                 <li><a href="">Política De Privacidade</a></li>
@@ -418,11 +676,12 @@
             </ul>
 
             <ul class="fourth-footer-container">
-                <li><a href="">Comunicado Para Imprensa</a></li>                                
+                <li><a href="">Comunicado Para Imprensa</a></li>
             </ul>
 
             <div class="copyright">
-                <p>©2025 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. Max é usado sob licença.</p>
+                <p>©2025 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. Max é usado sob licença.
+                </p>
             </div>
         </section>
 
@@ -430,20 +689,26 @@
             <div class="network">
                 <div>
                     <a href="">
-                        <img alt="Facebook" src="https://beam-images.warnermediacdn.com/2023-03/social_iconfacebook.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com" class="img-anim-in">
-                    </a>                    
+                        <img alt="Facebook"
+                            src="https://beam-images.warnermediacdn.com/2023-03/social_iconfacebook.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com"
+                            class="img-anim-in">
+                    </a>
                 </div>
 
                 <div>
                     <a href="">
-                        <img alt="X" src="https://beam-images.warnermediacdn.com/2024-02/x.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com" style="width: 15px;" class="img-anim-in">
-                    </a>                    
+                        <img alt="X"
+                            src="https://beam-images.warnermediacdn.com/2024-02/x.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com"
+                            style="width: 15px;" class="img-anim-in">
+                    </a>
                 </div>
 
                 <div>
                     <a href="#">
-                        <img alt="Tiktok" src="https://beam-images.warnermediacdn.com/2024-02/tik_tok.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com" style="width: 20px;" class="img-anim-in">
-                    </a>                    
+                        <img alt="Tiktok"
+                            src="https://beam-images.warnermediacdn.com/2024-02/tik_tok.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com"
+                            style="width: 20px;" class="img-anim-in">
+                    </a>
                 </div>
             </div>
         </section>
