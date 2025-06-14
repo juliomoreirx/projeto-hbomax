@@ -1,18 +1,15 @@
 /* ===============================
    PLANOS COMPONENT STYLES
-   ===============================
-   Organização e padronização usando variáveis do design system global.
-   Totalmente integrado com o CSS global atualizado.
    =============================== */
 
     .planos {
-        width: 100%;                /* Ocupa toda a largura disponível */
-        max-width: var(--plans-max-width);          /* Limita a largura máxima */
-        margin-left: auto;          /* Centraliza horizontalmente */
-        margin-right: auto;         /* Centraliza horizontalmente */
-        padding-left: 2px;         /* Margem interna pra não encostar na borda da tela */
-        padding-right: 2px;        /* Margem interna pra não encostar na borda da tela */
-        box-sizing: border-box;     /* Faz o padding não aumentar o tamanho total */
+        width: 100%;        
+        max-width: var(--plans-max-width);         
+        margin-left: auto;        
+        margin-right: auto;        
+        padding-left: 2px;         
+        padding-right: 2px;      
+        box-sizing: border-box;    
       }
       
 
@@ -327,7 +324,4 @@
 
 /* ===============================
    FIM DOS ESTILOS DO COMPONENTE PLANOS
-   ===============================
-   Componente totalmente integrado com o design system global
-   Todas as variáveis reutilizáveis e tema-agnóstico
    =============================== */
