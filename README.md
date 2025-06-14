@@ -1,4 +1,4 @@
-# PO - Clone da Landing Page HBO MAX
+# Landing Page HBO MAX
 
 Como Product Owner sênior, vou orientar sua equipe de 5 desenvolvedores iniciantes para criar um clone fiel da landing page HBO MAX, considerando a stack HTML + CSS e o prazo de 10 dias.
 
