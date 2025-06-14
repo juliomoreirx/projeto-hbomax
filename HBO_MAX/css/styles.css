@@ -150,6 +150,7 @@ select:-webkit-autofill:focus {
   --color-background-primary: #000000;    /* Preto principal */
   --color-background-secondary: #1A1A1A;  /* Cinza muito escuro para seções */
   --color-background-tertiary: #2D2D2D;   /* Cinza médio para cards */
+  --color-background-quaternary: #BFBFBF;   /* Cinza clario para botões */
   --color-background-overlay: rgba(0, 0, 0, 0.85); /* Overlay hero section */
   --color-background-card: #FFFFFF;       /* Cards brancos (planos) */
   --color-background-card-dark: var(--color-background-tertiary); /* Cards escuros */
@@ -159,6 +160,7 @@ select:-webkit-autofill:focus {
      =========================================== */
   --color-text-primary: #FFFFFF;          /* Branco principal */
   --color-text-secondary: #B3B3B3;        /* Cinza claro para textos secundários */
+  --color-text-tertiary: #C7C7C7;           /* Cinza mais claro para textos terciários */
   --color-text-muted: #808080;            /* Texto esmaecido */
   --color-text-disabled: #4D4D4D;         /* Texto desabilitado */
   --color-text-accent: var(--color-brand-primary); /* Texto em destaque */
@@ -186,12 +188,14 @@ select:-webkit-autofill:focus {
      TYPOGRAPHY SYSTEM - Sistema tipográfico (baseado na imagem)
      =========================================== */
   --font-primary: "Poppins", Arial, sans-serif; /* Fonte similar ao MAX */
+  --font-secundary: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;  /* Fonte título Estreias */
 
   /* Font Sizes - Baseado nos elementos visíveis */
   --font-size-logo: 4rem;                 /* 64px - Logo MAX grande */
   --font-size-hero: 3rem;                 /* 48px - Títulos principais hero */
   --font-size-heading-1: 2.5rem;          /* 40px - H1 principais */
-  --font-size-heading-2: 2rem;            /* 32px - H2 seções */
+  --font-size-heading-2: 2rem;            /* 32px - H2 seções */  
+  --font-size-heading-2b: 2.875rem;       /* 46px - H2 seção Estreias */
   --font-size-heading-3: 1.5rem;          /* 24px - H3 */
   --font-size-heading-4: 1.25rem;         /* 20px - H4 */
   --font-size-body: 1rem;                 /* 16px - Texto corpo */
@@ -272,6 +276,7 @@ select:-webkit-autofill:focus {
   --button-height-large: 52px;
   --button-padding-x: 24px;
   --button-padding-x-small: 16px;
+  --button-padding-xx-small: 13px;
   --button-border-radius: 4px;
   --button-font-weight: var(--font-weight-semibold);
   --button-font-size: var(--font-size-button);
@@ -565,6 +570,19 @@ select:-webkit-autofill:focus {
 
 .btn-secondary:hover {
   background-color: var(--button-secondary-hover);
+}
+
+.btn-tertiary {
+    padding: var(--button-padding-xx-small) var(--button-padding-x);
+    background-color: var(--color-background-card);
+    font-family: var(--font-secundary);
+    color: var(--color-text-on-white);
+    font-weight: var(--font-weight-bold);
+    border-radius: var(--card-border-radius);
+}
+
+.btn-tertiary:hover {
+  background-color: var(--color-background-quaternary);
 }
 
 /* Card base class */

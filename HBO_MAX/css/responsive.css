@@ -296,3 +296,95 @@
 /* ========================================
    FIM DOS ESTILOS DO COMPONENTE PLANOS
    ======================================== */
+
+
+
+
+   
+/* =================================================
+   INÍCIO DOS ESTILOS DO COMPONENTE ESTREIAS
+   =================================================
+   Estes estilos são específicos para o componente .Estreias e seus filhos
+   ================================================= */
+
+/* BREAKPOINT 0.5: ≥412px - 2 colunas responsivas */
+@media (min-width: 412px) {
+    .premieres--title {
+    font-size: var(--font-size-heading-3);
+    }
+
+    .premieres {
+        padding: 0 20px;
+    }
+    
+    .premieres--grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 15px;
+    }
+    
+    .premieres--grid-container--grid-item {
+        aspect-ratio: unset; /* Remove o aspect-ratio */
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* BREAKPOINT 1: ≥556px - Mobile com dimensões fixas */
+@media (min-width: 556px) {
+    .premieres--title {
+    padding-bottom: var(--space-lg);
+    font-size: var(--font-size-heading-2);
+    }
+    
+    .premieres--grid-container {
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(3, 142px);
+        gap: 15px;
+        width: auto; /* Remove o 100% */
+    }
+    .content-section--estreias--btn {
+        margin-top: 1rem;
+    }
+}
+
+/* BREAKPOINT 2: ≥770px - Mobile grande */
+@media (min-width: 770px) {
+    .premieres--title {
+    padding-bottom: var(--space-xxl);
+    font-size: var(--font-size-heading-1);
+    }
+    
+    .premieres--grid-container {
+        grid-template-columns: repeat(2, 335px);
+        grid-template-rows: repeat(3, 192px);
+        gap: 15px;
+    }
+}
+
+/* BREAKPOINT 3: ≥1025px - Tablet/Desktop pequeno */
+@media (min-width: 1025px) {
+    .premieres--title {
+    font-size: var(--font-size-heading-2b);
+    }
+
+    .premieres--grid-container {
+        grid-template-columns: repeat(3, 290px);
+        grid-template-rows: repeat(2, 165px);
+        gap: 30px;
+    }
+}
+
+/* BREAKPOINT 4: ≥1200px - Desktop */
+@media (min-width: 1200px) {
+    .premieres--grid-container {
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 200px);
+        gap: 30px;
+    }
+}
+
+   /* ========================================
+   FIM DOS ESTILOS DO COMPONENTE ESTREIAS
+   ======================================== */
