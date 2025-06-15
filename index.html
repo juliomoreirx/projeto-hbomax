@@ -1,1036 +1,887 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 ,
-    maximum-scale=1.0, user-scalable=no"
-    />
-    <meta
-      name=" description"
-      content="Assista filmes, séries e muito mais com Max. Planos acessíveis, títulos imperdíveis!"
-    />
-    <meta
-      name="keywords"
-      content="filmes, séries, streaming, Max, HBO Max, assistir online"
-    />
 
-    <!-- Favicon -->
-    <link
-      type="image/png"
-      sizes="120x120"
-      rel="icon"
-      href="./assets/img/icons/hbomax.ico"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ,
+    maximum-scale=1.0, user-scalable=no" />
+  <meta name=" description"
+    content="Assista filmes, séries e muito mais com Max. Planos acessíveis, títulos imperdíveis!" />
+  <meta name="keywords" content="filmes, séries, streaming, Max, HBO Max, assistir online" />
 
-    <!-- ===== CSS IMPORTS - ORDEM ESPECÍFICA ===== -->
+  <!-- Favicon -->
+  <link type="image/png" sizes="120x120" rel="icon" href="./assets/img/icons/hbomax.ico" />
 
-    <!-- 1. CSS GLOBAL - Reset, variáveis e base (SEMPRE PRIMEIRO) -->
-    <link rel="stylesheet" href="./css/styles.css" />
+  <!-- ===== CSS IMPORTS - ORDEM ESPECÍFICA ===== -->
 
-    <!-- 2. COMPONENTES ESTRUTURAIS - Na ordem de aparição na página -->
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/hero.css" />
-    <link rel="stylesheet" href="./css/plans.css" />
+  <!-- 1. CSS GLOBAL - Reset, variáveis e base (SEMPRE PRIMEIRO) -->
+  <link rel="stylesheet" href="./css/styles.css" />
 
-    <link rel="stylesheet" href="./css/content-sections.css" />
-    <link rel="stylesheet" href="/HBO_MAX/css/faq.css" />
-    <link rel="stylesheet" href="./css/content-section-1.css" />
-    <link rel="stylesheet" href="./css/content-section-2.css" />
-    <link rel="stylesheet" href="./css/content-section-3.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+  <!-- 2. COMPONENTES ESTRUTURAIS - Na ordem de aparição na página -->
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/hero.css" />
+  <link rel="stylesheet" href="./css/plans.css" />
 
-    <!-- 3. CSS RESPONSIVO  -->
-    <link rel="stylesheet" href="./css/responsive.css" />
+  <link rel="stylesheet" href="./css/content-sections.css" />
+  <link rel="stylesheet" href="/HBO_MAX/css/faq.css" />
+  <link rel="stylesheet" href="./css/content-section-1.css" />
+  <link rel="stylesheet" href="./css/content-section-2.css" />
+  <link rel="stylesheet" href="./css/content-section-3.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
 
-    <!-- Preconnect para fontes (otimização de performance) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- 3. CSS RESPONSIVO  -->
+  <link rel="stylesheet" href="./css/responsive.css" />
 
-    <title>Assistir Filmes Online | Assistir Séries Online | Max</title>
-  </head>
+  <!-- Preconnect para fontes (otimização de performance) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <body>
-    <header class="fixed">
-      <div class="header">
-        <div class="flex">
-          <div class="hamburger-menu">
-            <!-- Checkbox controla ícone e overlay -->
-            <input type="checkbox" id="checkbox" hidden />
+  <title>Assistir Filmes Online | Assistir Séries Online | Max</title>
+</head>
 
-            <!-- Ícone hambúrguer -->
-            <label for="checkbox" class="container-icon border">
-              <div class="line line-1"></div>
-              <div class="line line-2"></div>
-              <div class="line line-3"></div>
-            </label>
+<body>
+  <header class="fixed">
+    <div class="header">
+      <div class="flex">
+        <div class="hamburger-menu">
+          <!-- Checkbox controla ícone e overlay -->
+          <input type="checkbox" id="checkbox" hidden />
 
-            <!-- Menu Overlay -->
-            <div class="overlay">
-              <nav class="menu">
-                <ul>
-                  <li><a href="#">Opção 1</a></li>
-                  <li><a href="#">Opção 2</a></li>
-                  <li><a href="#">Opção 3</a></li>
-                  <li><a href="#">Opção 4</a></li>
-                  <li><a href="#">Opção 5</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+          <!-- Ícone hambúrguer -->
+          <label for="checkbox" class="container-icon border">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </label>
 
-          <div>
-            <a href=""><img src="/assets/img/logos/max_logo.png" alt="" /></a>
-          </div>
-
-          <div class="header-desktop">
+          <!-- Menu Overlay -->
+          <div class="overlay">
             <nav class="menu">
               <ul>
-                <li><a href="#">Filmes</a></li>
-                <li><a href="#">Séries de TV</a></li>
-                <li><a href="#">Crianças e Família</a></li>
-                <li><a href="#">Marcas</a></li>
-                <li><a href="#">Episódios Grátis</a></li>
-                <li><a href="#">Futebol</a></li>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
               </ul>
             </nav>
           </div>
         </div>
 
-        <div class="login-area">
-          <ul>
-            <li id="entrar"><a href="#">Entrar</a></li>
-            <li class="button"><a href="#">Assine agora</a></li>
-          </ul>
+        <div>
+          <a href=""><img src="./assets/img/logos/max_logo.png" alt="" /></a>
+        </div>
+
+        <div class="header-desktop">
+          <nav class="menu">
+            <ul>
+              <li><a href="#">Filmes</a></li>
+              <li><a href="#">Séries de TV</a></li>
+              <li><a href="#">Crianças e Família</a></li>
+              <li><a href="#">Marcas</a></li>
+              <li><a href="#">Episódios Grátis</a></li>
+              <li><a href="#">Futebol</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </header>
 
-    <main class="main">
+      <div class="login-area">
+        <ul>
+          <li id="entrar"><a href="#">Entrar</a></li>
+          <li class="button"><a href="#">Assine agora</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-        <section class="hero-section">
-            <!-- Hero com grid de thumbnails e overlay -->
-            <div class="hero-content">
-                <img src="/assets/img/logos/max_logo_branco.png" alt="Logo HBO MAX" class="hero-logo">
-                <p>Planos a partir de <strong>R$18,90/mês</strong></p>
-                <button class="cta-button">ASSINE AGORA</button>
+  <main class="main">
+
+    <section class="hero-section">
+      <!-- Hero com grid de thumbnails e overlay -->
+      <div class="hero-content">
+        <img src="./assets/img/logos/max_logo_branco.png" alt="Logo HBO MAX" class="hero-logo">
+        <p>Planos a partir de <strong>R$18,90/mês</strong></p>
+        <button class="cta-button">ASSINE AGORA</button>
+      </div>
+
+    </section>
+
+    <section class="planos">
+      <!-- Seção de planos -->
+      <div class="planos__wrapper container">
+        <div class="planos__header">
+          <h2 class="planos__title text-heading-2">
+            ESCOLHA O MELHOR PLANO PARA VOCÊ
+          </h2>
+        </div>
+
+        <input type="radio" id="billing-mensal" name="billing" class="planos__radio" checked />
+
+        <input type="radio" id="billing-anual" name="billing" class="planos__radio" />
+
+        <div class="planos__billing-label">
+          <span class="planos__billing-text">ECONIMIZE ATÉ 36%</span>
+        </div>
+
+        <div class="planos__billing-selector">
+          <div class="planos__toggle" role="tablist">
+            <label for="billing-mensal" class="planos__toggle-option">MENSAL</label>
+            <label for="billing-anual" class="planos__toggle-option">ANUAL PARCELADO</label>
+          </div>
+        </div>
+
+        <!-- Planos Mensais -->
+        <div class="planos__container" id="planos-mensais">
+          <article class="plano-card ">
+            <header class="plano-card__header">
+              <h3 class="plano-card__title">Básico com Anúncios</h3>
+              <div class="plano-card__divider" role="separator"></div>
+              <div class="plano-card__features">
+                <ul class="plano-card__feature-list">
+                  <li class="plano-card__feature feature-stream">
+                    <span>2 dispositivos</span> ao mesmo tempo
+                  </li>
+                  <li class="plano-card__feature feature-resolution">
+                    Resolução <span>Full HD</span>
+                  </li>
+                </ul>
+
+              </div>
+            </header>
+
+            <div class="plano-card__princing-wrapper">
+              <div class="plano-card__pricing">
+                <span class="plano-card__price">R$ 29,90</span>
+                <span class="plano-card__billing-cycle">/mês</span>
+              </div>
+
+              <div class="plano-card__cta">
+                <button class="btn-plan btn-plan--primary"
+                  aria-label="Escolher plano Básico com Anúncios por R$ 29,90 por mês">
+                  ESCOLHA SEU PLANO
+                </button>
+              </div>
             </div>
+          </article>
 
-        </section>
+          <article class="plano-card ">
+            <header class="plano-card__header">
+              <h3 class="plano-card__title">Standard</h3>
+              <div class="plano-card__divider" role="separator"></div>
+              <div class="plano-card__features">
+                <ul class="plano-card__feature-list">
+                  <li class="plano-card__feature feature-stream">
+                    <span>2 dispositivos</span> ao mesmo tempo
+                  </li>
+                  <li class="plano-card__feature feature-resolution">
+                    Resolução <span>Full HD</span>
+                  </li>
+                  <li class="plano-card__feature feature-download">
+                    <span>30 downloads</span> para curtir off-line
+                  </li>
+                </ul>
+              </div>
+            </header>
 
-      <section class="planos">
-        <!-- Seção de planos -->
-        <div class="planos__wrapper container">
-          <div class="planos__header">
-            <h2 class="planos__title text-heading-2">
-              ESCOLHA O MELHOR PLANO PARA VOCÊ
-            </h2>
-          </div>
+            <div class="plano-card__princing-wrapper">
+              <div class="plano-card__pricing">
+                <span class="plano-card__price">R$ 39,90</span>
+                <span class="plano-card__billing-cycle">/mês</span>
+              </div>
 
-          <input
-            type="radio"
-            id="billing-mensal"
-            name="billing"
-            class="planos__radio"
-            checked
-          />
-
-          <input
-            type="radio"
-            id="billing-anual"
-            name="billing"
-            class="planos__radio"
-          />
-
-          <div class="planos__billing-label">
-            <span class="planos__billing-text">ECONIMIZE ATÉ 36%</span>
-          </div>
-
-          <div class="planos__billing-selector">
-            <div class="planos__toggle" role="tablist">
-              <label for="billing-mensal" class="planos__toggle-option"
-                >MENSAL</label
-              >
-              <label for="billing-anual" class="planos__toggle-option"
-                >ANUAL PARCELADO</label
-              >
+              <div class="plano-card__cta">
+                <button class="btn-plan btn-plan--primary" aria-label="Escolher plano Standard por R$ 39,90 por mês">
+                  ESCOLHA SEU PLANO
+                </button>
+              </div>
             </div>
-          </div>
+          </article>
 
-          <!-- Planos Mensais -->
-          <div class="planos__container" id="planos-mensais">
-            <article class="plano-card ">
-              <header class="plano-card__header">
-                <h3 class="plano-card__title">Básico com Anúncios</h3>
-                <div class="plano-card__divider" role="separator"></div>
-                <div class="plano-card__features">
-                  <ul class="plano-card__feature-list">
-                    <li class="plano-card__feature feature-stream">
-                      <span>2 dispositivos</span> ao mesmo tempo
-                    </li>
-                    <li class="plano-card__feature feature-resolution">
-                      Resolução <span>Full HD</span>
-                    </li>
-                  </ul>
-
-                </div>
-              </header>
-
-              <div class="plano-card__princing-wrapper">
-                <div class="plano-card__pricing">
-                  <span class="plano-card__price">R$ 29,90</span>
-                  <span class="plano-card__billing-cycle">/mês</span>
-                </div>
-
-                <div class="plano-card__cta">
-                  <button
-                    class="btn-plan btn-plan--primary"
-                    aria-label="Escolher plano Básico com Anúncios por R$ 29,90 por mês"
-                  >
-                    ESCOLHA SEU PLANO
-                  </button>
-                </div>
+          <article class="plano-card plano-card-3">
+            <header class="plano-card__header">
+              <h3 class="plano-card__title">Platinum</h3>
+              <div class="plano-card__divider" role="separator"></div>
+              <div class="plano-card__features">
+                <ul class="plano-card__feature-list">
+                  <li class="plano-card__feature feature-stream">
+                    <span>4 dispositivos</span> ao mesmo tempo
+                  </li>
+                  <li class="plano-card__feature feature-resolution">
+                    Resolução <span>Full HD e 4K Ultra HD</span>
+                  </li>
+                  <li class="plano-card__feature feature-audio">
+                    Aúdio <span>Dolby Atmos</span>
+                  </li>
+                  <li class="plano-card__feature feature-download">
+                    <span>100 downloads</span> para curtir off-line
+                  </li>
+                </ul>
               </div>
-            </article>
+            </header>
 
-            <article class="plano-card ">
-              <header class="plano-card__header">
-                <h3 class="plano-card__title">Standard</h3>
-                <div class="plano-card__divider" role="separator"></div>
-                <div class="plano-card__features">
-                  <ul class="plano-card__feature-list">
-                    <li class="plano-card__feature feature-stream">
-                      <span>2 dispositivos</span> ao mesmo tempo
-                    </li>
-                    <li class="plano-card__feature feature-resolution">
-                      Resolução <span>Full HD</span>
-                    </li>
-                    <li class="plano-card__feature feature-download">
-                      <span>30 downloads</span> para curtir off-line
-                    </li>
-                  </ul>
-                </div>
-              </header>
-
-              <div class="plano-card__princing-wrapper">
-                <div class="plano-card__pricing">
-                  <span class="plano-card__price">R$ 39,90</span>
-                  <span class="plano-card__billing-cycle">/mês</span>
-                </div>
-
-                <div class="plano-card__cta">
-                  <button
-                    class="btn-plan btn-plan--primary"
-                    aria-label="Escolher plano Standard por R$ 39,90 por mês"
-                  >
-                    ESCOLHA SEU PLANO
-                  </button>
-                </div>
+            <div class="plano-card__princing-wrapper">
+              <div class="plano-card__pricing">
+                <span class="plano-card__price">R$ 55,90</span>
+                <span class="plano-card__billing-cycle">/mês</span>
               </div>
-            </article>
 
-            <article class="plano-card plano-card-3">
-              <header class="plano-card__header">
-                <h3 class="plano-card__title">Platinum</h3>
-                <div class="plano-card__divider" role="separator"></div>
-                <div class="plano-card__features">
-                  <ul class="plano-card__feature-list">
-                    <li class="plano-card__feature feature-stream">
-                      <span>4 dispositivos</span> ao mesmo tempo
-                    </li>
-                    <li class="plano-card__feature feature-resolution">
-                      Resolução <span>Full HD e 4K Ultra HD</span>
-                    </li>
-                    <li class="plano-card__feature feature-audio">
-                      Aúdio <span>Dolby Atmos</span>
-                    </li>
-                    <li class="plano-card__feature feature-download">
-                      <span>100 downloads</span> para curtir off-line
-                    </li>
-                  </ul>
-                </div>
-              </header>
-
-              <div class="plano-card__princing-wrapper">
-                <div class="plano-card__pricing">
-                  <span class="plano-card__price">R$ 55,90</span>
-                  <span class="plano-card__billing-cycle">/mês</span>
-                </div>
-
-                <div class="plano-card__cta">
-                  <button
-                    class="btn-plan"
-                    aria-label="Escolher plano Platinum por R$ 55,90 por mês"
-                  >
-                    ESCOLHA SEU PLANO
-                  </button>
-                </div>
+              <div class="plano-card__cta">
+                <button class="btn-plan" aria-label="Escolher plano Platinum por R$ 55,90 por mês">
+                  ESCOLHA SEU PLANO
+                </button>
               </div>
-            </article>
-          </div>
+            </div>
+          </article>
+        </div>
 
-          <!-- Planos Anuais -->
-          <div class="planos__container" id="planos-anuais">
-            <article class="plano-card">
-              <header class="plano-card__header">
-                <h3 class="plano-card__title">Básico com Anúncios</h3>
-                <div class="plano-card__divider" role="separator"></div>
+        <!-- Planos Anuais -->
+        <div class="planos__container" id="planos-anuais">
+          <article class="plano-card">
+            <header class="plano-card__header">
+              <h3 class="plano-card__title">Básico com Anúncios</h3>
+              <div class="plano-card__divider" role="separator"></div>
 
-                <div class="plano-card__features">
-                  <ul class="plano-card__feature-list">
-                    <li class="plano-card__feature feature-stream">
-                      <span>2 dispositivos</span> ao mesmo tempo
-                    </li>
-                    <li class="plano-card__feature feature-resolution">
-                      Resolução <span>Full HD</span>
-                    </li>
-                  </ul>
-                </div>
-              </header>
-
-              <div class="plano-card__princing-wrapper">
-                <div class="plano-card__pricing">
-                  <span class="plano-card__price">12x R$ 18,90</span>
-                  <span class="plano-card__billing-cycle">/mês</span>
-                  <p class="plano-card__total">Preço total anual R$ 226,80</p>
-                </div>
-
-                <div class="plano-card__cta">
-                  <button
-                    class="btn-plan btn-plan--primary"
-                    aria-label="Escolher plano Básico anual por 12x R$ 18,90"
-                  >
-                    ESCOLHA SEU PLANO
-                  </button>
-                </div>
+              <div class="plano-card__features">
+                <ul class="plano-card__feature-list">
+                  <li class="plano-card__feature feature-stream">
+                    <span>2 dispositivos</span> ao mesmo tempo
+                  </li>
+                  <li class="plano-card__feature feature-resolution">
+                    Resolução <span>Full HD</span>
+                  </li>
+                </ul>
               </div>
-            </article>
+            </header>
 
-            <article class="plano-card">
-              <header class="plano-card__header">
-                <h3 class="plano-card__title">Standard</h3>
-                <div class="plano-card__divider" role="separator"></div>
-
-                <div class="plano-card__features">
-                  <ul class="plano-card__feature-list">
-                    <li class="plano-card__feature feature-stream">
-                      <span>2 dispositivos</span> ao mesmo tempo
-                    </li>
-                    <li class="plano-card__feature feature-resolution">
-                      Resolução <span>Full HD</span>
-                    </li>
-                    <li class="plano-card__feature feature-download">
-                      <span>30 downloads</span> para curtir off-line
-                    </li>
-                  </ul>
-                </div>
-              </header>
-
-              <div class="plano-card__princing-wrapper">
-                <div class="plano-card__pricing">
-                  <span class="plano-card__price">12x R$ 29,90</span>
-                  <span class="plano-card__billing-cycle">/mês</span>
-                  <p class="plano-card__total">Preço total anual R$ 358,80</p>
-                </div>
-
-                <div class="plano-card__cta">
-                  <button
-                    class="btn-plan btn-plan--primary"
-                    aria-label="Escolher plano Básico anual por 12x R$ 29,90"
-                  >
-                    ESCOLHA SEU PLANO
-                  </button>
-                </div>
+            <div class="plano-card__princing-wrapper">
+              <div class="plano-card__pricing">
+                <span class="plano-card__price">12x R$ 18,90</span>
+                <span class="plano-card__billing-cycle">/mês</span>
+                <p class="plano-card__total">Preço total anual R$ 226,80</p>
               </div>
-            </article>
 
-            <article class="plano-card plano-card-3">
-              <header class="plano-card__header">
-                <h3 class="plano-card__title">Platinum</h3>
-                <div class="plano-card__divider" role="separator"></div>
-
-                <div class="plano-card__features">
-                  <ul class="plano-card__feature-list">
-                    <li class="plano-card__feature feature-stream">
-                      <span>4 dispositivos</span> ao mesmo tempo
-                    </li>
-                    <li class="plano-card__feature feature-resolution">
-                      Resolução <span>Full HD e 4K Ultra HD</span>
-                    </li>
-                    <li class="plano-card__feature feature-audio">
-                      Aúdio <span>Dolby Atmos</span>
-                    </li>
-                    <li class="plano-card__feature feature-download">
-                      <span>100 downloads</span> para curtir off-line
-                    </li>
-                  </ul>
-                </div>
-              </header>
-
-              <div class="plano-card__princing-wrapper">
-                <div class="plano-card__pricing">
-                  <span class="plano-card__price">12x R$ 39,90</span>
-                  <span class="plano-card__billing-cycle">/mês</span>
-                  <p class="plano-card__total">Preço total anual R$ 478,80</p>
-                </div>
-
-                <div class="plano-card__cta">
-                  <button
-                    class="btn-plan btn-plan--primary"
-                    aria-label="Escolher plano Básico anual por 12x R$ 39,90"
-                  >
-                    ESCOLHA SEU PLANO
-                  </button>
-                </div>
+              <div class="plano-card__cta">
+                <button class="btn-plan btn-plan--primary" aria-label="Escolher plano Básico anual por 12x R$ 18,90">
+                  ESCOLHA SEU PLANO
+                </button>
               </div>
-            </article>
-          </div>
+            </div>
+          </article>
 
-          <div class="planos__mais-info">
-            <small
-              >*Full HD, 4K Ultra HD e Dolby Atmos não estão disponíveis em todo
-              o conteúdo de cada plano. O conteúdo ao vivo nos planos Standard e
-              Platinum pode conter anúncios. Downloads podem ter restrições em
-              algumas categorias de conteúdo. Saiba mais em:
-              <a
-                href="https://help.max.com/plans"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                help.max.com/plans
-              </a>
-            </small>
-          </div>
+          <article class="plano-card">
+            <header class="plano-card__header">
+              <h3 class="plano-card__title">Standard</h3>
+              <div class="plano-card__divider" role="separator"></div>
 
-          <div class="planos__mais-info-anual">
-            <small
-              >*Full HD, 4K Ultra HD e Dolby Atmos não estão disponíveis em todo
-              o conteúdo de cada plano. O conteúdo ao vivo nos planos Standard e
-              Platinum pode conter anúncios. Downloads podem ter restrições em
-              algumas categorias de conteúdo. Saiba mais em:
-              <a
-                href="https://help.max.com/plans"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                help.max.com/plans
-              </a>
-              Economia calculada com base no preço da assinatura anual vs. a
-              assinatura mensal regular ao longo de 12 meses.</small
-            >
+              <div class="plano-card__features">
+                <ul class="plano-card__feature-list">
+                  <li class="plano-card__feature feature-stream">
+                    <span>2 dispositivos</span> ao mesmo tempo
+                  </li>
+                  <li class="plano-card__feature feature-resolution">
+                    Resolução <span>Full HD</span>
+                  </li>
+                  <li class="plano-card__feature feature-download">
+                    <span>30 downloads</span> para curtir off-line
+                  </li>
+                </ul>
+              </div>
+            </header>
+
+            <div class="plano-card__princing-wrapper">
+              <div class="plano-card__pricing">
+                <span class="plano-card__price">12x R$ 29,90</span>
+                <span class="plano-card__billing-cycle">/mês</span>
+                <p class="plano-card__total">Preço total anual R$ 358,80</p>
+              </div>
+
+              <div class="plano-card__cta">
+                <button class="btn-plan btn-plan--primary" aria-label="Escolher plano Básico anual por 12x R$ 29,90">
+                  ESCOLHA SEU PLANO
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="plano-card plano-card-3">
+            <header class="plano-card__header">
+              <h3 class="plano-card__title">Platinum</h3>
+              <div class="plano-card__divider" role="separator"></div>
+
+              <div class="plano-card__features">
+                <ul class="plano-card__feature-list">
+                  <li class="plano-card__feature feature-stream">
+                    <span>4 dispositivos</span> ao mesmo tempo
+                  </li>
+                  <li class="plano-card__feature feature-resolution">
+                    Resolução <span>Full HD e 4K Ultra HD</span>
+                  </li>
+                  <li class="plano-card__feature feature-audio">
+                    Aúdio <span>Dolby Atmos</span>
+                  </li>
+                  <li class="plano-card__feature feature-download">
+                    <span>100 downloads</span> para curtir off-line
+                  </li>
+                </ul>
+              </div>
+            </header>
+
+            <div class="plano-card__princing-wrapper">
+              <div class="plano-card__pricing">
+                <span class="plano-card__price">12x R$ 39,90</span>
+                <span class="plano-card__billing-cycle">/mês</span>
+                <p class="plano-card__total">Preço total anual R$ 478,80</p>
+              </div>
+
+              <div class="plano-card__cta">
+                <button class="btn-plan btn-plan--primary" aria-label="Escolher plano Básico anual por 12x R$ 39,90">
+                  ESCOLHA SEU PLANO
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="planos__mais-info">
+          <small>*Full HD, 4K Ultra HD e Dolby Atmos não estão disponíveis em todo
+            o conteúdo de cada plano. O conteúdo ao vivo nos planos Standard e
+            Platinum pode conter anúncios. Downloads podem ter restrições em
+            algumas categorias de conteúdo. Saiba mais em:
+            <a href="https://help.max.com/plans" target="_blank" rel="noopener noreferrer">
+              help.max.com/plans
+            </a>
+          </small>
+        </div>
+
+        <div class="planos__mais-info-anual">
+          <small>*Full HD, 4K Ultra HD e Dolby Atmos não estão disponíveis em todo
+            o conteúdo de cada plano. O conteúdo ao vivo nos planos Standard e
+            Platinum pode conter anúncios. Downloads podem ter restrições em
+            algumas categorias de conteúdo. Saiba mais em:
+            <a href="https://help.max.com/plans" target="_blank" rel="noopener noreferrer">
+              help.max.com/plans
+            </a>
+            Economia calculada com base no preço da assinatura anual vs. a
+            assinatura mensal regular ao longo de 12 meses.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-group">
+      <section class="content-section content-section--destacados">
+        <!-- "As grandes histórias, os dramas imperdíveis..." -->
+        <h2 class="destaque-title">
+          As grandes histórias, os dramas imperdíveis e as melhores comédias
+          estão na Max.
+        </h2>
+        <div class="destacados-wrapper">
+          <div class="destacados-container">
+            <figure class="item-img familia">
+              <figcaption>
+                <div class="info">
+                  <span class="item-categoria">CRIANÇAS E FAMÍLIA</span>
+                  <span class="item-selo"></span>
+                  <h3 class="item-titulo">PEPPA PIG</h3>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="item-img reality">
+              <figcaption>
+                <div class="info">
+                  <span class="item-categoria">REALITY</span>
+                  <span class="item-selo"></span>
+                  <h3 class="item-titulo">Largados e Pelados</h3>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="item-img novelas">
+              <figcaption>
+                <div class="info">
+                  <span class="item-categoria">NOVELAS</span>
+                  <span class="item-selo">MAX ORIGINAL</span>
+                  <h3 class="item-titulo">Será Isso Amor?</h3>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="item-img filmes">
+              <figcaption>
+                <div class="info">
+                  <span class="item-categoria">FILMES</span>
+                  <span class="item-selo">MAX ORIGINAL</span>
+                  <h3 class="item-titulo">GODZILLA VS KONG</h3>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="item-img drama">
+              <figcaption>
+                <div class="info">
+                  <span class="item-categoria">DRAMA</span>
+                  <span class="item-selo">HBO ORIGINAL</span>
+                  <h3 class="item-titulo">A GUERRA DOS TRONOS</h3>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="item-img acao">
+              <figcaption>
+                <div class="info">
+                  <span class="item-categoria">AÇÃO</span>
+                  <span class="item-selo">HBO ORIGINAL</span>
+                  <h3 class="item-titulo">THE LAST OF US</h3>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="item-img comedia">
+              <figcaption>
+                <div class="info">
+                  <span class="item-categoria">COMÉDIA</span>
+                  <span class="item-selo"></span>
+                  <h3 class="item-titulo">THE BIG BANG THEORY</h3>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="item-img documentarios">
+              <figcaption>
+                <div class="info">
+                  <span class="item-categoria">DOCUMENTÁRIOS</span>
+                  <span class="item-selo"></span>
+                  <h3 class="item-titulo">ROMÁRIO, O CARA</h3>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="item-img futebol">
+              <figcaption>
+                <div class="info">
+                  <span class="item-categoria">FUTEBOL</span>
+                  <span class="item-selo"></span>
+                  <h3 class="item-titulo">CHAMPIONS LEAGUE</h3>
+                </div>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section class="content-group">
-        <section class="content-section content-section--destacados">
-          <!-- "As grandes histórias, os dramas imperdíveis..." -->
-          <h2 class="destaque-title">
-            As grandes histórias, os dramas imperdíveis e as melhores comédias
-            estão na Max.
-          </h2>
-          <div class="destacados-wrapper">
-            <div class="destacados-container">
-              <figure class="item-img familia">
-                <figcaption>
-                  <div class="info">
-                    <span class="item-categoria">CRIANÇAS E FAMÍLIA</span>
-                    <span class="item-selo"></span>
-                    <h3 class="item-titulo">PEPPA PIG</h3>
-                  </div>
-                </figcaption>
-              </figure>
+      <section class="content-section content-section--estreias">
+        <!-- "Estreias que vão dar o que falar" -->
 
-              <figure class="item-img reality">
-                <figcaption>
-                  <div class="info">
-                    <span class="item-categoria">REALITY</span>
-                    <span class="item-selo"></span>
-                    <h3 class="item-titulo">Largados e Pelados</h3>
-                  </div>
-                </figcaption>
-              </figure>
+        <div>
+          <h2 class="premieres--title">Estreias que vão dar o que falar</h2>
+        </div>
 
-              <figure class="item-img novelas">
-                <figcaption>
-                  <div class="info">
-                    <span class="item-categoria">NOVELAS</span>
-                    <span class="item-selo">MAX ORIGINAL</span>
-                    <h3 class="item-titulo">Será Isso Amor?</h3>
-                  </div>
-                </figcaption>
-              </figure>
-
-              <figure class="item-img filmes">
-                <figcaption>
-                  <div class="info">
-                    <span class="item-categoria">FILMES</span>
-                    <span class="item-selo">MAX ORIGINAL</span>
-                    <h3 class="item-titulo">GODZILLA VS KONG</h3>
-                  </div>
-                </figcaption>
-              </figure>
-
-              <figure class="item-img drama">
-                <figcaption>
-                  <div class="info">
-                    <span class="item-categoria">DRAMA</span>
-                    <span class="item-selo">HBO ORIGINAL</span>
-                    <h3 class="item-titulo">A GUERRA DOS TRONOS</h3>
-                  </div>
-                </figcaption>
-              </figure>
-
-              <figure class="item-img acao">
-                <figcaption>
-                  <div class="info">
-                    <span class="item-categoria">AÇÃO</span>
-                    <span class="item-selo">HBO ORIGINAL</span>
-                    <h3 class="item-titulo">THE LAST OF US</h3>
-                  </div>
-                </figcaption>
-              </figure>
-
-              <figure class="item-img comedia">
-                <figcaption>
-                  <div class="info">
-                    <span class="item-categoria">COMÉDIA</span>
-                    <span class="item-selo"></span>
-                    <h3 class="item-titulo">THE BIG BANG THEORY</h3>
-                  </div>
-                </figcaption>
-              </figure>
-
-              <figure class="item-img documentarios">
-                <figcaption>
-                  <div class="info">
-                    <span class="item-categoria">DOCUMENTÁRIOS</span>
-                    <span class="item-selo"></span>
-                    <h3 class="item-titulo">ROMÁRIO, O CARA</h3>
-                  </div>
-                </figcaption>
-              </figure>
-
-              <figure class="item-img futebol">
-                <figcaption>
-                  <div class="info">
-                    <span class="item-categoria">FUTEBOL</span>
-                    <span class="item-selo"></span>
-                    <h3 class="item-titulo">CHAMPIONS LEAGUE</h3>
-                  </div>
-                </figcaption>
-              </figure>
+        <div class="premieres">
+          <div class="premieres--grid-container">
+            <div class="premieres--grid-container--grid-item">
+              <img src="assets/img/thumbnails/1_estreia.avif" alt="Imagem 1" />
+            </div>
+            <div class="premieres--grid-container--grid-item">
+              <img src="assets/img/thumbnails/2_estreia.avif" alt="Imagem 2" />
+            </div>
+            <div class="premieres--grid-container--grid-item">
+              <img src="assets/img/thumbnails/3_estreia.avif" alt="Imagem 3" />
+            </div>
+            <div class="premieres--grid-container--grid-item">
+              <img src="assets/img/thumbnails/4_estreia.avif" alt="Imagem 4" />
+            </div>
+            <div class="premieres--grid-container--grid-item">
+              <img src="assets/img/thumbnails/5_estreia.avif" alt="Imagem 5" />
+            </div>
+            <div class="premieres--grid-container--grid-item">
+              <img src="assets/img/thumbnails/6_estreia.avif" alt="Imagem 6" />
             </div>
           </div>
-        </section>
+        </div>
+        <div class="content-section--estreias--btn">
+          <a class="btn btn-tertiary" href="#">ASSINE AGORA</a>
+        </div>
+      </section>
 
-        <section class="content-section content-section--estreias">
-          <!-- "Estreias que vão dar o que falar" -->
+      <section class="content-section content-section--categorias">
+        <!-- "Descubra o melhor de" - Ação, Comédia, etc -->
+        <section class="discovery-section" id="page7743-band182632">
+          <div class="section-container">
+            <h1 class="section-title">DESCUBRA O MELHOR DE</h1>
 
-          <div>
-            <h2 class="premieres--title">Estreias que vão dar o que falar</h2>
-          </div>
+            <div class="category-carousel">
+              <button class="carousel-nav carousel-prev" aria-label="Categoria anterior">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
 
-          <div class="premieres">
-            <div class="premieres--grid-container">
-              <div class="premieres--grid-container--grid-item">
-                <img
-                  src="assets/img/thumbnails/1_estreia.avif"
-                  alt="Imagem 1"
-                />
-              </div>
-              <div class="premieres--grid-container--grid-item">
-                <img
-                  src="assets/img/thumbnails/2_estreia.avif"
-                  alt="Imagem 2"
-                />
-              </div>
-              <div class="premieres--grid-container--grid-item">
-                <img
-                  src="assets/img/thumbnails/3_estreia.avif"
-                  alt="Imagem 3"
-                />
-              </div>
-              <div class="premieres--grid-container--grid-item">
-                <img
-                  src="assets/img/thumbnails/4_estreia.avif"
-                  alt="Imagem 4"
-                />
-              </div>
-              <div class="premieres--grid-container--grid-item">
-                <img
-                  src="assets/img/thumbnails/5_estreia.avif"
-                  alt="Imagem 5"
-                />
-              </div>
-              <div class="premieres--grid-container--grid-item">
-                <img
-                  src="assets/img/thumbnails/6_estreia.avif"
-                  alt="Imagem 6"
-                />
-              </div>
+              <nav class="category-nav">
+                <ul class="category-list">
+                  <li class="category-item">
+                    <a href="#realities" class="category-link">Realities</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#acao" class="category-link active">Ação</a>
+                  </li>
+                  <li class="category-item">
+                    <a href="#comedia" class="category-link">Comédia</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <button class="carousel-nav carousel-next" aria-label="Próxima categoria">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
             </div>
-          </div>
-          <div class="content-section--estreias--btn">
-            <a class="btn btn-tertiary" href="#">ASSINE AGORA</a>
-          </div>
-        </section>
 
-        <section class="content-section content-section--categorias">
-          <!-- "Descubra o melhor de" - Ação, Comédia, etc -->
-          <section class="discovery-section" id="page7743-band182632">
-            <div class="section-container">
-              <h1 class="section-title">DESCUBRA O MELHOR DE</h1>
-
-              <div class="category-carousel">
-                <button
-                  class="carousel-nav carousel-prev"
-                  aria-label="Categoria anterior"
-                >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M15 18L9 12L15 6"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-
-                <nav class="category-nav">
-                  <ul class="category-list">
-                    <li class="category-item">
-                      <a href="#realities" class="category-link">Realities</a>
-                    </li>
-                    <li class="category-item">
-                      <a href="#acao" class="category-link active">Ação</a>
-                    </li>
-                    <li class="category-item">
-                      <a href="#comedia" class="category-link">Comédia</a>
-                    </li>
-                  </ul>
-                </nav>
-
-                <button
-                  class="carousel-nav carousel-next"
-                  aria-label="Próxima categoria"
-                >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M9 18L15 12L9 6"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-
-              <div class="content-showcase">
-                <div class="content-grid">
-                  <div
-                    class="content-item featured-large"
-                    data-title="Beleza Fatal"
-                  >
-                    <a href="#" class="content-link">
-                      <div class="content-poster">
-                        <img
-                          src="/assets/img/thumbnails/1_estreia.avif"
-                          alt="Beleza Fatal"
-                          class="poster-image"
-                        />
-                        <div class="content-overlay">
-                          <div class="overlay-content">
-                            <h2 class="content-title">Beleza Fatal</h2>
-                            <span class="content-badge">HBO ORIGINAL</span>
-                          </div>
+            <div class="content-showcase">
+              <div class="content-grid">
+                <div class="content-item featured-large" data-title="Beleza Fatal">
+                  <a href="#" class="content-link">
+                    <div class="content-poster">
+                      <img src="/assets/img/thumbnails/1_estreia.avif" alt="Beleza Fatal" class="poster-image" />
+                      <div class="content-overlay">
+                        <div class="overlay-content">
+                          <h2 class="content-title">Beleza Fatal</h2>
+                          <span class="content-badge">HBO ORIGINAL</span>
                         </div>
                       </div>
-                    </a>
-                  </div>
+                    </div>
+                  </a>
+                </div>
 
-                  <div
-                    class="content-item featured-large"
-                    data-title="Ninja Kamui"
-                  >
-                    <a href="#" class="content-link">
-                      <div class="content-poster">
-                        <img
-                          src="/assets/img/thumbnails/2_estreia.avif"
-                          alt="Ninja Kamui"
-                          class="poster-image"
-                        />
-                        <div class="content-overlay">
-                          <div class="overlay-content">
-                            <h2 class="content-title">The Last Of US</h2>
-                            <span class="content-badge">MAX ORIGINAL</span>
-                          </div>
+                <div class="content-item featured-large" data-title="Ninja Kamui">
+                  <a href="#" class="content-link">
+                    <div class="content-poster">
+                      <img src="/assets/img/thumbnails/2_estreia.avif" alt="Ninja Kamui" class="poster-image" />
+                      <div class="content-overlay">
+                        <div class="overlay-content">
+                          <h2 class="content-title">The Last Of US</h2>
+                          <span class="content-badge">MAX ORIGINAL</span>
                         </div>
                       </div>
-                    </a>
-                  </div>
+                    </div>
+                  </a>
+                </div>
 
-                  <div
-                    class="content-item featured-large"
-                    data-title="Supernatural"
-                  >
-                    <a href="#" class="content-link">
-                      <div class="content-poster">
-                        <img
-                          src="/assets/img/thumbnails/3_estreia.avif"
-                          alt="Supernatural"
-                          class="poster-image"
-                        />
-                        <div class="content-overlay">
-                          <div class="overlay-content">
-                            <h2 class="content-title">The White Lotus</h2>
-                            <span class="content-badge">SÉRIE</span>
-                          </div>
+                <div class="content-item featured-large" data-title="Supernatural">
+                  <a href="#" class="content-link">
+                    <div class="content-poster">
+                      <img src="/assets/img/thumbnails/3_estreia.avif" alt="Supernatural" class="poster-image" />
+                      <div class="content-overlay">
+                        <div class="overlay-content">
+                          <h2 class="content-title">The White Lotus</h2>
+                          <span class="content-badge">SÉRIE</span>
                         </div>
                       </div>
-                    </a>
-                  </div>
+                    </div>
+                  </a>
+                </div>
 
-                  <div class="content-item featured-wide" data-title="Furiosa">
-                    <a href="#" class="content-link">
-                      <div class="content-poster">
-                        <img
-                          src="/assets/img/thumbnails/4_estreia.avif"
-                          alt="Furiosa: Uma Saga Mad Max"
-                          class="poster-image"
-                        />
-                        <div class="content-overlay">
-                          <div class="overlay-content">
-                            <h2 class="content-title">FURIOSA</h2>
-                            <span class="content-subtitle">The PITT</span>
-                            <span class="content-badge">FILME</span>
-                          </div>
+                <div class="content-item featured-wide" data-title="Furiosa">
+                  <a href="#" class="content-link">
+                    <div class="content-poster">
+                      <img src="/assets/img/thumbnails/4_estreia.avif" alt="Furiosa: Uma Saga Mad Max"
+                        class="poster-image" />
+                      <div class="content-overlay">
+                        <div class="overlay-content">
+                          <h2 class="content-title">FURIOSA</h2>
+                          <span class="content-subtitle">The PITT</span>
+                          <span class="content-badge">FILME</span>
                         </div>
                       </div>
-                    </a>
-                  </div>
+                    </div>
+                  </a>
+                </div>
 
-                  <div
-                    class="content-item featured-wide"
-                    data-title="Godzilla vs Kong"
-                  >
-                    <a href="#" class="content-link">
-                      <div class="content-poster">
-                        <img
-                          src="/assets/img/thumbnails/5_estreia.avif"
-                          alt="Godzilla vs Kong"
-                          class="poster-image"
-                        />
-                        <div class="content-overlay">
-                          <div class="overlay-content">
-                            <h2 class="content-title">Mickey 17</h2>
-                            <span class="content-badge">FILME</span>
-                          </div>
+                <div class="content-item featured-wide" data-title="Godzilla vs Kong">
+                  <a href="#" class="content-link">
+                    <div class="content-poster">
+                      <img src="/assets/img/thumbnails/5_estreia.avif" alt="Godzilla vs Kong" class="poster-image" />
+                      <div class="content-overlay">
+                        <div class="overlay-content">
+                          <h2 class="content-title">Mickey 17</h2>
+                          <span class="content-badge">FILME</span>
                         </div>
                       </div>
-                    </a>
-                  </div>
+                    </div>
+                  </a>
+                </div>
 
-                  <div
-                    class="content-item featured-wide"
-                    data-title="Resgate Azul"
-                  >
-                    <a href="#" class="content-link">
-                      <div class="content-poster">
-                        <img
-                          src="/assets/img/thumbnails/6_estreia.avif"
-                          alt="Resgate Azul"
-                          class="poster-image"
-                        />
-                        <div class="content-overlay">
-                          <div class="overlay-content">
-                            <h2 class="content-title">HACKS</h2>
-                            <span class="content-badge">FILME</span>
-                          </div>
+                <div class="content-item featured-wide" data-title="Resgate Azul">
+                  <a href="#" class="content-link">
+                    <div class="content-poster">
+                      <img src="/assets/img/thumbnails/6_estreia.avif" alt="Resgate Azul" class="poster-image" />
+                      <div class="content-overlay">
+                        <div class="overlay-content">
+                          <h2 class="content-title">HACKS</h2>
+                          <span class="content-badge">FILME</span>
                         </div>
                       </div>
-                    </a>
-                  </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </section>
       </section>
-      <!------------------------------------------------------------------------------------------
+    </section>
+    <!------------------------------------------------------------------------------------------
                                          START MAX-SVG SECTION
         ------------------------------------------------------------------------------------------->
-      <section class="max-svg">
-        <div class="svg-container">
-          <svg
-            role="img"
-            aria-labelledby="max-logo"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 280 76.64"
-            style="fill:#fff;"
-          >
-            <title id="max-logo">Max</title>
-            <path
-              d="M192.93,74.7h24.13a159.5,159.5,0,0,1,19.53-25.47,164.51,164.51,0,0,1,19,25.47H280a292.93,292.93,0,0,0-28.38-36.86A279.48,279.48,0,0,0,280,1.94H256.11a170.86,170.86,0,0,1-19.52,24.62A155.25,155.25,0,0,1,217.06,1.94H192.93a241.68,241.68,0,0,0,28.5,35.9A310.78,310.78,0,0,0,192.93,74.7Z"
-            ></path>
-            <path
-              d="M145.52,76.64a31,31,0,0,0,24.86-11.52V74.7h19V1.94h-19v9.58A31,31,0,0,0,145.52,0c-19.89,0-36.38,17.1-36.38,38.32S125.63,76.64,145.52,76.64ZM127.09,38.32a21.46,21.46,0,1,1,21.46,21.46A21.42,21.42,0,0,1,127.09,38.32Zm5,0a16.49,16.49,0,1,0,16.49-16.61A16.53,16.53,0,0,0,132.06,38.32Z"
-            ></path>
-            <path
-              d="M0,74.7H20V29.47c8.73-6.91,12.73-9.1,16-9.1,3.88,0,6.42,2.43,6.42,8.49V74.7h20V29.35c8.73-6.79,12.61-9,16-9,3.88,0,6.43,2.43,6.43,8.49V74.7h20V21.83C104.89,5.46,95.56,0,86.58,0,78.94,0,71.18,3.15,61,10.91,57.72,2.79,50.57,0,44.14,0,36.5,0,28.74,3.4,18.8,11V1.94H0Z"
-            ></path>
-          </svg>
-        </div>
-      </section>
-      <!------------------------------------------------------------------------------------------
+    <section class="max-svg">
+      <div class="svg-container">
+        <svg role="img" aria-labelledby="max-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 76.64"
+          style="fill:#fff;">
+          <title id="max-logo">Max</title>
+          <path
+            d="M192.93,74.7h24.13a159.5,159.5,0,0,1,19.53-25.47,164.51,164.51,0,0,1,19,25.47H280a292.93,292.93,0,0,0-28.38-36.86A279.48,279.48,0,0,0,280,1.94H256.11a170.86,170.86,0,0,1-19.52,24.62A155.25,155.25,0,0,1,217.06,1.94H192.93a241.68,241.68,0,0,0,28.5,35.9A310.78,310.78,0,0,0,192.93,74.7Z">
+          </path>
+          <path
+            d="M145.52,76.64a31,31,0,0,0,24.86-11.52V74.7h19V1.94h-19v9.58A31,31,0,0,0,145.52,0c-19.89,0-36.38,17.1-36.38,38.32S125.63,76.64,145.52,76.64ZM127.09,38.32a21.46,21.46,0,1,1,21.46,21.46A21.42,21.42,0,0,1,127.09,38.32Zm5,0a16.49,16.49,0,1,0,16.49-16.61A16.53,16.53,0,0,0,132.06,38.32Z">
+          </path>
+          <path
+            d="M0,74.7H20V29.47c8.73-6.91,12.73-9.1,16-9.1,3.88,0,6.42,2.43,6.42,8.49V74.7h20V29.35c8.73-6.79,12.61-9,16-9,3.88,0,6.43,2.43,6.43,8.49V74.7h20V21.83C104.89,5.46,95.56,0,86.58,0,78.94,0,71.18,3.15,61,10.91,57.72,2.79,50.57,0,44.14,0,36.5,0,28.74,3.4,18.8,11V1.94H0Z">
+          </path>
+        </svg>
+      </div>
+    </section>
+    <!------------------------------------------------------------------------------------------
                                          END MAX-SVG SECTION
         ------------------------------------------------------------------------------------------->
 
-      <!------------------------------------------------------------------------------------------
+    <!------------------------------------------------------------------------------------------
                                             START FAQ SECTION
         ------------------------------------------------------------------------------------------->
-      <section class="faq-container">
-        <div class="faq-item" data-index="1">
-          <div class="faq-question">
-            Como eu faço para assinar?
-            <span class="faq-arrow"
-              ><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt=""
-            /></span>
-          </div>
-          <hr />
-          <div class="faq-answer">
-            <p>
-              A Max está disponível para assinatura aqui na max.com e também
-              através dos nossos provedores de assinatura na região. Se você tem
-              a HBO no seu pacote de televisão por assinatura e/ou serviço de
-              internet, você terá acesso à Max sem custo adicional. Você pode
-              entrar em contato com sua operadora local para obter mais
-              detalhes.
-            </p>
-          </div>
+    <section class="faq-container">
+      <div class="faq-item" data-index="1">
+        <div class="faq-question">
+          Como eu faço para assinar?
+          <span class="faq-arrow"><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt="" /></span>
         </div>
-
-        <div class="faq-item" data-index="2">
-          <div class="faq-question">
-            Onde a Max está disponível?
-            <span class="faq-arrow"
-              ><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt=""
-            /></span>
-          </div>
-          <hr />
-          <div class="faq-answer">
-            <p>
-              Nossa plataforma aprimorada está disponível para Anguila, Antígua
-              e Barbuda, Argentina, Aruba, Bahamas, Barbados, Belize, Bolívia,
-              Brasil, Chile, Colômbia, Costa Rica, Curaçao, Dominica, Equador,
-              El Salvador, Granada, Guatemala, Guiana, Haiti, Honduras, Ilhas
-              Virgens Britânicas, Ilhas Cayman, Jamaica, México, Montserrat,
-              Nicarágua, Panamá, Paraguai, Peru, República Dominicana, Saint
-              Kitts e Nevis, Santa Lúcia, São Vicente e Granadinas, Suriname,
-              Trinidad e Tobago, Turks e Caicos, Uruguai, Venezuela e Estados
-              Unidos.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-index="3">
-          <div class="faq-question">
-            Quanto custa a Max?
-            <span class="faq-arrow"
-              ><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt=""
-            /></span>
-          </div>
-          <hr />
-          <div class="faq-answer">
-            <p>
-              Novos usuários podem escolher entre três planos, dependendo de
-              suas preferências:
-            </p>
-            <p>
-              Plano Básico com Anúncios: A assinatura mensal custa R$29,90 e a
-              anual custa R$226,80.
-            </p>
-            <ul class="list">
-              <li>Assista com anúncios limitados</li>
-              <li>2 dispositivos ao mesmo tempo</li>
-              <li>Resolução Full HD</li>
-            </ul>
-
-            <p>
-              Plano Standard: A assinatura mensal custa R$39,90 e a anual custa
-              R$358,80.
-            </p>
-            <ul class="list">
-              <li>2 dispositivos ao mesmo tempo</li>
-              <li>Resolução Full HD</li>
-              <li>30 downloads para curtir off-line</li>
-            </ul>
-
-            <p>
-              Plano Platinum: A assinatura mensal custa R$55,90 e a anual custa
-              R$ 478,80.
-            </p>
-            <ul class="list">
-              <li>4 dispositivos ao mesmo tempo</li>
-              <li>Resolução Full HD e 4K Ultra HD*</li>
-              <li>Aúdio Dolby Atmos*</li>
-              <li>100 downloads para curtir off-line</li>
-            </ul>
-
-            <p class="caption">
-              *Full HD, 4K Ultra HD e Dolby Atmos não estão disponíveis em todo
-              o conteúdo de cada plano. O conteúdo ao vivo nos planos Standard e
-              Platinum pode conter anúncios. Downloads podem ter restrições em
-              algumas categorias de conteúdo. Saiba mais em help.max.com/plans
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item" data-index="4">
-          <div class="faq-question">
-            Em quais dispositivos a Max está disponível?
-            <span class="faq-arrow"
-              ><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt=""
-            /></span>
-          </div>
-          <hr />
-          <div class="faq-answer">
-            <h2>TV</h2>
-            <ul class="list">
-              <li>Amazon Fire</li>
-              <li>Android TV</li>
-              <li>Apple TV</li>
-              <li>Chromecast</li>
-              <li>LG</li>
-              <li>Roku</li>
-              <li>Samsung</li>
-            </ul>
-
-            <h2>Computadores</h2>
-            <ul class="list">
-              <li>Chrome OS</li>
-              <li>Mac OS</li>
-              <li>Windows PC</li>
-            </ul>
-
-            <h2>Vídeo-games</h2>
-            <ul class="list">
-              <li>PS4</li>
-              <li>PS5</li>
-              <li>Xbox One</li>
-              <li>Xbox Series X|S</li>
-            </ul>
-
-            <h2>Smartphones & Tablets</h2>
-            <ul class="list">
-              <li>Amazon Fire Tablet</li>
-              <li><a href="#">Android Phone & Tablet</a></li>
-              <li><a href="#">iPhone & iPad</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="faq-item" data-index="5">
-          <div class="faq-question">
-            Eu tenho HBO. Eu tenho acesso à Max?
-            <span class="faq-arrow"
-              ><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt=""
-            /></span>
-          </div>
-          <hr />
-          <div class="faq-answer">
-            <p>
-              A Max está incluída sem custo adicional na assinatura dos canais
-              da HBO por meio de algumas operadoras de TV paga participantes em
-              toda a região. Você pode entrar em contato com sua operadora local
-              para obter mais detalhes.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!----------------------------------------------------------------------------------------------
-                                         END FAQ SECTION
-    ----------------------------------------------------------------------------------------------->
-    </main>
-    <!----------------------------------------------------------------------------------------------
-                                       START FOOTER SECTION
-    ----------------------------------------------------------------------------------------------->
-    <footer class="footer">
-      <section class="footer-section">
-        <ul class="first-footer-container">
-          <li><a href="">AGORA NA MAX</a></li>
-          <li><a href="">FILMES</a></li>
-          <li><a href="">SÉRIES</a></li>
-          <li><a href="">EPISÓDIOS GRÁTIS</a></li>
-          <li><a href="">FUTEBOL</a></li>
-          <li><a href="">CRIANÇA E FAMÍLIA</a></li>
-          <li><a href="">FILMES E SÉRIES PREMIADOS</a></li>
-        </ul>
-
-        <ul class="second-footer-container">
-          <li><a href="">AJUDA</a></li>
-        </ul>
-
-        <ul class="third-footer-container">
-          <li><a href="">Acessibilidade</a></li>
-          <li><a href="">Política De Privacidade</a></li>
-          <li><a href="">Modo Infantil</a></li>
-          <li><a href="">Termos De Uso</a></li>
-          <li><a href="">Gerenciar Preferências De Cookies</a></li>
-        </ul>
-
-        <ul class="fourth-footer-container">
-          <li><a href="">Comunicado Para Imprensa</a></li>
-        </ul>
-
-        <div class="copyright">
+        <hr />
+        <div class="faq-answer">
           <p>
-            ©2025 WarnerMedia Direct Latin America, LLC. Todos os direitos
-            reservados. Max é usado sob licença.
+            A Max está disponível para assinatura aqui na max.com e também
+            através dos nossos provedores de assinatura na região. Se você tem
+            a HBO no seu pacote de televisão por assinatura e/ou serviço de
+            internet, você terá acesso à Max sem custo adicional. Você pode
+            entrar em contato com sua operadora local para obter mais
+            detalhes.
           </p>
         </div>
-      </section>
+      </div>
 
-      <section>
-        <div class="network">
-          <div>
-            <a href="">
-              <img
-                alt="Facebook"
-                src="https://beam-images.warnermediacdn.com/2023-03/social_iconfacebook.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com"
-                class="img-anim-in"
-              />
-            </a>
-          </div>
-
-          <div>
-            <a href="">
-              <img
-                alt="X"
-                src="https://beam-images.warnermediacdn.com/2024-02/x.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com"
-                style="width: 15px;"
-                class="img-anim-in"
-              />
-            </a>
-          </div>
-
-          <div>
-            <a href="#">
-              <img
-                alt="Tiktok"
-                src="https://beam-images.warnermediacdn.com/2024-02/tik_tok.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com"
-                style="width: 20px;"
-                class="img-anim-in"
-              />
-            </a>
-          </div>
+      <div class="faq-item" data-index="2">
+        <div class="faq-question">
+          Onde a Max está disponível?
+          <span class="faq-arrow"><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt="" /></span>
         </div>
-      </section>
-    </footer>
+        <hr />
+        <div class="faq-answer">
+          <p>
+            Nossa plataforma aprimorada está disponível para Anguila, Antígua
+            e Barbuda, Argentina, Aruba, Bahamas, Barbados, Belize, Bolívia,
+            Brasil, Chile, Colômbia, Costa Rica, Curaçao, Dominica, Equador,
+            El Salvador, Granada, Guatemala, Guiana, Haiti, Honduras, Ilhas
+            Virgens Britânicas, Ilhas Cayman, Jamaica, México, Montserrat,
+            Nicarágua, Panamá, Paraguai, Peru, República Dominicana, Saint
+            Kitts e Nevis, Santa Lúcia, São Vicente e Granadinas, Suriname,
+            Trinidad e Tobago, Turks e Caicos, Uruguai, Venezuela e Estados
+            Unidos.
+          </p>
+        </div>
+      </div>
 
-    <script src="/HBO_MAX/js/faq.js"></script>
-  </body>
+      <div class="faq-item" data-index="3">
+        <div class="faq-question">
+          Quanto custa a Max?
+          <span class="faq-arrow"><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt="" /></span>
+        </div>
+        <hr />
+        <div class="faq-answer">
+          <p>
+            Novos usuários podem escolher entre três planos, dependendo de
+            suas preferências:
+          </p>
+          <p>
+            Plano Básico com Anúncios: A assinatura mensal custa R$29,90 e a
+            anual custa R$226,80.
+          </p>
+          <ul class="list">
+            <li>Assista com anúncios limitados</li>
+            <li>2 dispositivos ao mesmo tempo</li>
+            <li>Resolução Full HD</li>
+          </ul>
+
+          <p>
+            Plano Standard: A assinatura mensal custa R$39,90 e a anual custa
+            R$358,80.
+          </p>
+          <ul class="list">
+            <li>2 dispositivos ao mesmo tempo</li>
+            <li>Resolução Full HD</li>
+            <li>30 downloads para curtir off-line</li>
+          </ul>
+
+          <p>
+            Plano Platinum: A assinatura mensal custa R$55,90 e a anual custa
+            R$ 478,80.
+          </p>
+          <ul class="list">
+            <li>4 dispositivos ao mesmo tempo</li>
+            <li>Resolução Full HD e 4K Ultra HD*</li>
+            <li>Aúdio Dolby Atmos*</li>
+            <li>100 downloads para curtir off-line</li>
+          </ul>
+
+          <p class="caption">
+            *Full HD, 4K Ultra HD e Dolby Atmos não estão disponíveis em todo
+            o conteúdo de cada plano. O conteúdo ao vivo nos planos Standard e
+            Platinum pode conter anúncios. Downloads podem ter restrições em
+            algumas categorias de conteúdo. Saiba mais em help.max.com/plans
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-index="4">
+        <div class="faq-question">
+          Em quais dispositivos a Max está disponível?
+          <span class="faq-arrow"><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt="" /></span>
+        </div>
+        <hr />
+        <div class="faq-answer">
+          <h2>TV</h2>
+          <ul class="list">
+            <li>Amazon Fire</li>
+            <li>Android TV</li>
+            <li>Apple TV</li>
+            <li>Chromecast</li>
+            <li>LG</li>
+            <li>Roku</li>
+            <li>Samsung</li>
+          </ul>
+
+          <h2>Computadores</h2>
+          <ul class="list">
+            <li>Chrome OS</li>
+            <li>Mac OS</li>
+            <li>Windows PC</li>
+          </ul>
+
+          <h2>Vídeo-games</h2>
+          <ul class="list">
+            <li>PS4</li>
+            <li>PS5</li>
+            <li>Xbox One</li>
+            <li>Xbox Series X|S</li>
+          </ul>
+
+          <h2>Smartphones & Tablets</h2>
+          <ul class="list">
+            <li>Amazon Fire Tablet</li>
+            <li><a href="#">Android Phone & Tablet</a></li>
+            <li><a href="#">iPhone & iPad</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item" data-index="5">
+        <div class="faq-question">
+          Eu tenho HBO. Eu tenho acesso à Max?
+          <span class="faq-arrow"><img src="/HBO_MAX/assets/img/icons/up-chevron.png" alt="" /></span>
+        </div>
+        <hr />
+        <div class="faq-answer">
+          <p>
+            A Max está incluída sem custo adicional na assinatura dos canais
+            da HBO por meio de algumas operadoras de TV paga participantes em
+            toda a região. Você pode entrar em contato com sua operadora local
+            para obter mais detalhes.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!----------------------------------------------------------------------------------------------
+                                         END FAQ SECTION
+    ----------------------------------------------------------------------------------------------->
+  </main>
+  <!----------------------------------------------------------------------------------------------
+                                       START FOOTER SECTION
+    ----------------------------------------------------------------------------------------------->
+  <footer class="footer">
+    <section class="footer-section">
+      <ul class="first-footer-container">
+        <li><a href="">AGORA NA MAX</a></li>
+        <li><a href="">FILMES</a></li>
+        <li><a href="">SÉRIES</a></li>
+        <li><a href="">EPISÓDIOS GRÁTIS</a></li>
+        <li><a href="">FUTEBOL</a></li>
+        <li><a href="">CRIANÇA E FAMÍLIA</a></li>
+        <li><a href="">FILMES E SÉRIES PREMIADOS</a></li>
+      </ul>
+
+      <ul class="second-footer-container">
+        <li><a href="">AJUDA</a></li>
+      </ul>
+
+      <ul class="third-footer-container">
+        <li><a href="">Acessibilidade</a></li>
+        <li><a href="">Política De Privacidade</a></li>
+        <li><a href="">Modo Infantil</a></li>
+        <li><a href="">Termos De Uso</a></li>
+        <li><a href="">Gerenciar Preferências De Cookies</a></li>
+      </ul>
+
+      <ul class="fourth-footer-container">
+        <li><a href="">Comunicado Para Imprensa</a></li>
+      </ul>
+
+      <div class="copyright">
+        <p>
+          ©2025 WarnerMedia Direct Latin America, LLC. Todos os direitos
+          reservados. Max é usado sob licença.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="network">
+        <div>
+          <a href="">
+            <img alt="Facebook"
+              src="https://beam-images.warnermediacdn.com/2023-03/social_iconfacebook.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com"
+              class="img-anim-in" />
+          </a>
+        </div>
+
+        <div>
+          <a href="">
+            <img alt="X"
+              src="https://beam-images.warnermediacdn.com/2024-02/x.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com"
+              style="width: 15px;" class="img-anim-in" />
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+            <img alt="Tiktok"
+              src="https://beam-images.warnermediacdn.com/2024-02/tik_tok.png?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com"
+              style="width: 20px;" class="img-anim-in" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script src="./js/faq.js"></script>
+</body>
+
 </html>
