@@ -3,7 +3,7 @@ section.hero-section {
     position: relative;
     height: 60vh;
     width: 100vw;
-    background: url('/assets/img/max_capa.avif') no-repeat center center;
+    background: url('../assets/img/max_capa.avif') no-repeat center center;
     background-size: cover;
     display: grid;
     align-items: end;
