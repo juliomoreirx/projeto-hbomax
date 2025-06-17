@@ -1,5 +1,10 @@
+.max-svg {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .faq-container {
-  width: 65rem;
+  width: auto;
   margin: auto;
   background-color: #000;
   border-radius: 10px;
