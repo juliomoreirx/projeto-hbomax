@@ -28,6 +28,24 @@
         text-transform: uppercase;
     }
 
+    .flex .header-desktop li:hover {
+        background: rgba(191, 191, 191, 0.3);
+        border-radius: var(--radius-large);
+    }
+
+    .login-area li:hover {
+        background: rgba(191, 191, 191, 0.3);
+        border-radius: var(--radius-large);
+    }
+
+    li.button:hover {
+        background: none;
+    }
+
+    .button a:hover {
+        background: rgba(255, 255, 255, 0.7);
+    }
+
     .humburger-menu {
         font-size: var(--font-size-button);
     }
@@ -54,7 +72,6 @@
     background: var(--color-text-primary);
     color: var(--color-text-on-white);
     font-weight: var(--font-weight-extrabold);
-
     padding: 0.6rem 1.5rem;
     border-radius: var(--radius-large);
 }
@@ -107,11 +124,10 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 50vh;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
-    align-items: center;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -124,9 +140,11 @@
 
 }
 
+
 .overlay .menu ul {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -138,9 +156,8 @@
 }
 
 .overlay .menu a {
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
-    /* font-size: 24px; */
     color: white;
     font-weight: bold;
     transition: color 0.3s;
@@ -148,8 +165,19 @@
 }
 
 .overlay .menu a:hover {
-    background: var(--color-background-quaternary);
+    background: rgba(255, 255, 255, 0.7);
     border-radius: var(--radius-large);
+}
+
+.overlay .entrar {
+    /* border-top: 1px solid gray; */
+    display: none;
+}
+
+.overlay li.entrar {
+    border-top: 1px solid gray;
+    width: 100%;
+    padding-top: 0.3rem;
 }
 
 /* .border {
