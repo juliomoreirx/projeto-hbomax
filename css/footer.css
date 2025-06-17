@@ -18,6 +18,7 @@
   font-weight: 700;
 }
 
+
 .footer ul li:hover {
   background-color: var(--color-background-tertiary);
   border-radius: 10px;
