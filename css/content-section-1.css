@@ -1,0 +1,122 @@
+.destacados-wrapper {
+    overflow-x: auto;
+    margin-bottom: 1rem;
+
+    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.1);;
+}
+
+
+
+.destacados-container {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(208px, 1fr)); 
+}
+
+.item-img {
+    background-size: cover;
+    background-position: top center;
+    width: calc(100% - 2px);
+    min-height: 500px; 
+    height: auto;
+}
+
+.familia {
+    background-image: url('../assets/img/thumbnails/content-1.jpg');
+}
+
+.reality {
+    background-image: url('../assets/img/thumbnails/content-2.jpg');
+}
+
+.novelas {
+    background-image: url('../assets/img/thumbnails/content-3.jpg');
+}
+
+.filmes {
+    background-image: url('../assets/img/thumbnails/content-4.jpg');
+}
+
+.drama {
+    background-image: url('../assets/img/thumbnails/content-5.jpg');
+}
+
+.acao {
+    background-image: url('../assets/img/thumbnails/content-6.jpg');
+}
+
+.comedia {
+    background-image: url('../assets/img/thumbnails/content-7.jpg');
+}
+
+.documentarios {
+    background-image: url('../assets/img/thumbnails/content-8.jpg');
+}
+
+.futebol {
+    background-image: url('../assets/img/thumbnails/content-9.jpg');
+}
+
+
+
+
+
+
+.item-img span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.8rem;
+}
+
+.destaque-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.info {
+    position: relative;
+    top: 410px;
+}
+
+.info h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.item-categoria {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: -0.8rem;
+}
+
+.item-selo{
+    color: rgba(231, 231, 231, 0.8);
+    padding: 0.5rem 1rem;
+    font-size: 0.60rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: -0.5rem;
+}
+
+.item-titulo {
+    color: rgba(231, 231, 231, 0.8);
+    font-size: 0.813rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    line-height: 20.8px;
+    margin-bottom: 0.5rem;
+}
+

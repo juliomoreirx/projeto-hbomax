@@ -1,0 +1,327 @@
+/* ===============================
+   PLANOS COMPONENT STYLES
+   =============================== */
+
+    .planos {
+        width: 100%;        
+        max-width: var(--plans-max-width);         
+        margin-left: auto;        
+        margin-right: auto;        
+        padding-left: 2px;         
+        padding-right: 2px;      
+        box-sizing: border-box;    
+      }
+      
+
+/* Titulo dos planos */
+.planos h2 {
+    font-size: var(--font-size-heading-2);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    letter-spacing: var(--letter-spacing-wide);
+    text-align: center;
+    margin: var(--space-xl) 0 var(--space-lg);
+    line-height: var(--line-height-tight);
+}
+
+/* Label do seletor de cobrança */
+.planos__billing-label {
+    margin-bottom: -1.5rem;
+}
+
+.planos__billing-text {
+    font-weight: var(--plans-billing-label-font-weight);
+    color: var(--plans-billing-label-color);
+    font-size: 0.675rem;
+    position: relative;
+    left: 51%;
+}
+
+
+/* Seletor de cobrança */
+.planos__billing-selector {
+    width: var(--plans-billing-selector-width);
+    height: var(--plans-billing-selector-height);
+    background-color: var(--plans-billing-selector-bg);
+    margin: var(--plans-billing-selector-margin);
+    border-radius: var(--plans-billing-selector-radius);
+}
+
+/* Toggle do seletor de cobrança */
+.planos__toggle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    height: inherit;
+}
+
+/* Opções do toggle */
+.planos__toggle-option {
+    font-weight: var(--plans-toggle-option-font-weight);
+    font-size: var(--plans-toggle-option-font-size);
+    color: var(--plans-toggle-option-color);
+    letter-spacing: var(--letter-spacing-normal);
+    cursor: pointer;
+    transition: var(--transition-normal);
+    padding: var(--plans-toggle-option-padding);
+    border-radius: var(--plans-toggle-option-radius);
+}
+
+.planos__toggle-option:hover {
+    background-color: var(--color-background-secondary);
+}
+
+/* Radio invisível */
+.planos__radio {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#planos-mensais,
+#planos-anuais {
+    display: none;
+}
+
+/* Infos extras (mensal/anual) */
+.planos__mais-info, .planos__mais-info-anual {
+    display: none;
+}
+
+#billing-anual:checked ~ .planos__mais-info-anual {
+    display: block;
+}
+
+#billing-mensal:checked ~ .planos__mais-info {
+    display: block;
+}
+
+/* Exibição dos cards de plano ao selecionar mensal */
+#billing-mensal:checked ~ #planos-mensais {
+    display: grid;
+    grid-template-columns: repeat(var(--plans-grid-columns-desktop), 1fr);
+    gap: var(--plans-grid-gap);
+}
+
+/* Exibição dos cards de plano ao selecionar anual */
+#billing-anual:checked ~ #planos-anuais {
+    display: grid;
+    grid-template-columns: repeat(var(--plans-grid-columns-desktop), 1fr);
+    gap: var(--plans-grid-gap);
+}
+
+/* Toggle ativo */
+#billing-mensal:checked ~ .planos__billing-selector .planos__toggle-option[for="billing-mensal"] {
+    background-color: var(--plans-toggle-option-bg-active);
+    color: var(--plans-toggle-option-color-active);
+}
+#billing-anual:checked ~ .planos__billing-selector .planos__toggle-option[for="billing-anual"] {
+    background-color: var(--plans-toggle-option-bg-active);
+    color: var(--plans-toggle-option-color-active);
+}
+
+/* Card do plano */
+.planos .plano-card {
+    background-color: var(--plans-card-bg);
+    border: var(--plans-card-border);
+    border-radius: var(--plans-card-radius);
+    padding: var(--plans-card-padding);
+    box-shadow: var(--plans-card-shadow);
+    color: var(--color-text-on-card);
+    text-align: center;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition-normal);
+}
+
+.planos .plano-card:hover {
+    box-shadow: var(--card-shadow-hover);
+}
+
+/* Título do card */
+.planos .plano-card__title {
+    text-align: start;
+    font-size: var(--plans-card-title-font-size);
+    font-weight: var(--plans-card-title-font-weight);
+    color: var(--plans-card-title-color);
+    line-height: var(--line-height-tight);
+}
+
+/* Divisor do card */
+.planos .plano-card__divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-border-card);
+    margin: var(--space-lg) 0;
+    opacity: 0.3;
+}
+
+/* Features do plano */
+.planos .plano-card__features {
+    text-align: start;
+    font-size: var(--font-size-body-small);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-on-card);
+    margin-bottom: var(--space-lg);
+}
+
+.planos .plano-card__features ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: var(--space-sm);
+}
+
+.planos .plano-card__features span {
+    font-weight: var(--font-weight-bold);
+}
+
+
+.planos .plano-card__features li::before {
+    content: "";
+    width: var(--font-size-body-small);
+    height: var(--font-size-body-small);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    flex-shrink: 0;
+    margin-right: var(--space-xs);
+    vertical-align: middle;
+}
+
+/* Ícones customizados para features */
+.planos .plano-card__features li.feature-stream::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m3.5,13.6l4.78,5.87,12.22-15' style='fill: none; stroke: %23000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;'/%3E%3C/svg%3E");
+}
+.planos .plano-card__features li.feature-resolution::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m6.5,20h11' style='fill: none; stroke: %23000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;'/%3E%3Crect x='1.5' y='4' width='21' height='12' rx='1' ry='1' style='fill: none; stroke: %23000000; stroke-width: 2px;'/%3E%3C/svg%3E");
+}
+.planos .plano-card__features li.feature-audio::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3.5' y='13' width='5' height='7' rx='1' ry='1' style='fill: none; stroke: %23000000; stroke-width: 2px;'/%3E%3Cpath d='m5.5,13c0-3.86,0-9,6.5-9s6.5,5.14,6.5,9' style='fill: none; stroke: %23000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;'/%3E%3Crect x='15.5' y='13' width='5' height='7' rx='1' ry='1' style='fill: none; stroke: %23000000; stroke-width: 2px;'/%3E%3C/svg%3E");
+}
+.planos .plano-card__features li.feature-download::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m3.5,20h17' style='fill: none; stroke: %23000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;'/%3E%3Cpath d='m12,4v11m0,0l-4.5-4.5m4.5,4.5l4.5-4.5' style='fill: none; stroke: %23000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;'/%3E%3C/svg%3E");
+}
+
+/* Preço do plano */
+.planos .plano-card__price {
+    font-size: var(--plans-card-price-font-size);
+    font-weight: var(--plans-card-price-font-weight);
+    color: var(--plans-card-price-color);
+    line-height: var(--line-height-tight);
+}
+
+/* Ciclo de cobrança */
+.plano-card__billing-cycle {
+    font-size: var(--font-size-body-small);
+    font-weight: var(--font-weight-light);
+    color: var(--color-text-muted);
+    margin-top: var(--space-xs);
+}
+
+/* Wrapper do preço e botão */
+.planos .plano-card__princing-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--space-xs);
+}
+
+/* CTA do card */
+.planos .plano-card__cta {
+    max-width: 100%;
+    align-self: center;
+    margin-top: var(--space-xs);
+    width: 100%;
+}
+
+/* Botão de planos */
+.planos .btn-plan {
+    min-height: var(--plans-btn-height);
+    font-size: var(--plans-btn-font-size);
+    font-weight: var(--plans-btn-font-weight);
+    padding: var(--plans-btn-padding);
+    text-decoration: none;
+    color: var(--plans-btn-text);
+    background-color: var(--plans-btn-bg);
+    border-radius: var(--plans-btn-radius);
+    transition: var(--transition-normal);
+    border: 2px solid transparent;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.planos .btn-plan:hover {
+    border: 2px solid var(--color-background-secondary);
+    box-shadow: var(--shadow-medium);
+}
+
+.planos .btn-plan:active {
+    transform: translateY(0);
+}
+
+/* Mais info (mensal/anual) */
+.planos__mais-info,
+.planos__mais-info-anual {
+    font-size: var(--font-size-body-small);
+    color: var(--color-text-secondary);
+    text-align: center;
+    margin-top: var(--space-xxl);
+    margin-bottom: var(--space-xxl);
+    line-height: var(--line-height-relaxed);
+}
+
+.planos__mais-info a,
+.planos__mais-info-anual a {
+    text-decoration: none;
+    color: var(--color-brand-primary);
+    font-size: var(--font-size-body-small);
+    font-weight: var(--font-weight-medium);
+    transition: var(--transition-fast);
+}
+
+.planos__mais-info a:hover,
+.planos__mais-info-anual a:hover {
+    text-decoration: underline;
+    color: var(--color-brand-secondary);
+}
+
+
+
+/* ===============================
+   PRINT OPTIMIZATION
+   ===============================
+   Otimizações para impressão
+   =============================== */
+
+@media print {
+    .planos__billing-selector,
+    .planos__toggle {
+        display: none;
+    }
+    
+    #planos-mensais,
+    #planos-anuais {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 1rem;
+        page-break-inside: avoid;
+    }
+    
+    .planos .plano-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    .planos .btn-plan {
+        display: none;
+    }
+}
+
+/* ===============================
+   FIM DOS ESTILOS DO COMPONENTE PLANOS
+   =============================== */

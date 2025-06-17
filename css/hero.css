@@ -1,0 +1,64 @@
+section.hero-section {
+    margin-top: 3.8rem;
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    background: url('../assets/img/max_capa.avif') no-repeat center center;
+    background-size: cover;
+    display: grid;
+    align-items: end;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.hero-content img.hero-logo {
+    max-width: 400px;
+    height: auto;
+}
+
+
+/* Gradiente para escurecer do meio para baixo */
+.hero-section::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 40%, #000 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-bottom: 5rem;
+}
+
+.hero-logo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ccc;
+}

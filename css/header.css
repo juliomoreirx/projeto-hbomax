@@ -1,0 +1,176 @@
+/* 
+=======================================
+    MENU MOBILE
+=======================================
+*/
+
+.header {
+    /* border: 1px solid green; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-background-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-caption);
+    z-index: 10000;
+
+    img {
+        max-width: 130px;
+        padding: 0.5rem;
+        margin: 5px 0.5rem;
+    }
+
+    a {
+        text-transform: uppercase;
+    }
+
+    .humburger-menu {
+        font-size: var(--font-size-button);
+    }
+
+    .login-area {
+        width: 350px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            justify-content: flex-end;
+        }
+
+        ul li {
+            padding: var(--space-sm);
+            margin: 8px 0;
+            /* border: 1px solid red; */
+        }
+    }
+}
+
+.button a {
+    background: var(--color-text-primary);
+    color: var(--color-text-on-white);
+    font-weight: var(--font-weight-extrabold);
+
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--radius-large);
+}
+
+.flex {
+    display: flex;
+}
+
+
+.container-icon {
+    width: 2rem;
+    height: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    margin: 0.9rem 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-text-secondary);
+    border-radius: 8px;
+    transition: all ease 0.2s;
+    transform-origin: center
+}
+
+#checkbox:checked+label .line-1 {
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scaleX(1);
+}
+
+#checkbox:checked+label .line-2 {
+    opacity: 0;
+}
+
+#checkbox:checked+label .line-3 {
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scaleX(1);
+}
+
+/* ========== Overlay Menu ========== */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 800;
+}
+
+#checkbox:checked~.overlay {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.overlay .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.overlay .menu li {
+    margin: 20px 0;
+}
+
+.overlay .menu a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.overlay .menu a:hover {
+    color: #999;
+}
+
+/* .border {
+    border: 1px solid red;
+} */
+
+/* 
+=======================================
+    MENU DESKTOP
+=======================================
+*/
+
+.header-desktop {
+    display: none;
+    justify-content: space-between;
+    font-weight: var(--font-weight-extrabold);
+    font-size: var(--font-size-caption);
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            padding: var(--space-sm);
+            margin: 10px 0;
+            /* border: 1px solid red; */
+
+        }
+    }
+
+}

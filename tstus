@@ -1,0 +1,73 @@
+[33mdedea17[m[33m ([m[1;36mHEAD -> [m[1;32mfeat--adiciona-faq-section[m[33m, [m[1;31morigin/feat--adiciona-faq-section[m[33m)[m Merge branch 'feat--adiciona-faq-section' of https://github.com/juliomoreirx/projeto-hbomax-lp-clone into feat--adiciona-faq-section
+[33m2a64281[m *Fix - Ação do menu acordeon migrado para javascript.
+[33m2d8a001[m *Build - Adicionado arquivo 'faq.js'.
+[33ma34c237[m Merge branch 'main' into feat--adiciona-faq-section
+[33mdf71fd1[m *Build - Adicionado seção de FAQ com menu acordeon.
+[33m5d56f4f[m chore: ajustando font-size destaque
+[33m2ce8843[m[33m ([m[1;31morigin/feat/ajustes-content[m[33m)[m chore: ajustando font-size destaque
+[33m47f2b4e[m chore: Ajustando responsividade content-section-1
+[33mf2618f5[m Merge branch 'main' into feat/ajustes-content
+[33m283b93c[m chore: AJustando responsividade content-section-1
+[33mfbce570[m chore: Ajustando o grid layout do carousel de destaques na responsividade
+[33m5c67eea[m Merge branch 'main' of https://github.com/juliomoreirx/projeto-hbomax-lp-clone
+[33m3181409[m Ajustando o grid layout do carousel de destaques na responsividade
+[33me999424[m Merge pull request #49 from juliomoreirx/chore/header-nav-desktop
+[33m32e8d69[m[33m ([m[1;31morigin/chore/header-nav-desktop[m[33m)[m chore: ajusta espaços e texto menu desktop
+[33mb772299[m chore: ajuste na mudança do menu desktop para mobile
+[33mb61c173[m style: uso de variáveis globais no estilo
+[33m6f0e535[m Merge pull request #48 from juliomoreirx/chore/responsive-header
+[33mf5ab595[m[33m ([m[1;31morigin/chore/responsive-header[m[33m)[m chore: ajusta a responsividade da barra de navegação
+[33me6bb2ba[m :chore: Acrescenta o titulo do Destaque e sua estilizacao
+[33m69f1aed[m :chore: Acrescenta o titulo do Destaque e sua estilizacao
+[33m4381e76[m :chore: Ajusta ultimo titulo do carousel
+[33mab2e0d2[m :chore: Ajustando viewport
+[33mde7fd2b[m :chore: tentando ajustar o viewport
+[33mb951f58[m feat: adiciona content-section-1 com responsividade
+[33m921d0b7[m Merge branch 'main' into feat/content-section-1
+[33m591a872[m feat: adiciona content-section-1 com responsividade
+[33m5aede66[m Merge pull request #40 from juliomoreirx/feat/adiciona-footer
+[33mea8ea9f[m[33m ([m[1;31morigin/feat/adiciona-footer[m[33m, [m[1;32mfeat/adiciona-footer[m[33m)[m *Build - Concluído o footer da página.
+[33me1a1715[m Merge pull request #39 from juliomoreirx/feat/adiciona-nav-desktop
+[33m957127d[m[33m ([m[1;31morigin/feat/adiciona-nav-desktop[m[33m)[m feat: adiciona menu desktop com 1200px
+[33m2a34a84[m chore: ajustes na transição do menu mobile para o desktop
+[33mf5af610[m Merge pull request #38 from juliomoreirx/feat/adiciona-header
+[33mb66dea7[m style: responcividade menu hamburguer 576px à 767px
+[33mc836c62[m chore: alteração na transição do hamburguer
+[33m1037806[m Merge pull request #37 from juliomoreirx/feat/adiciona-header
+[33mf471d34[m Merge branch 'main' into feat/adiciona-header
+[33m57e24a0[m style: responsividade da barra de navegação
+[33m7fbbda3[m style: estilo do menu hamburguer do header
+[33mff8a503[m feat: adiciona estrutura html no header
+[33me2d4f2b[m feat: Ajusta responsividade
+[33m89b6eab[m feat: Ajusta responsividade
+[33mec52e2d[m feat: Ajusta responsividade
+[33m1470fe4[m feat: Ajusta responsividade da aba Planos
+[33m582c906[m Merge branch 'main' of https://github.com/juliomoreirx/projeto-hbomax-lp-clone
+[33m1cd8f23[m feat: Ajusta responsividade da aba Planos
+[33me1c55c9[m Create static.yml
+[33mae70ea6[m Create pages.yml
+[33me2db1cc[m feat: Adiciona planos responsivo ao projeto
+[33m07988df[m feat: Adiciona planos responsivo ao projeto
+[33m99f5819[m feat: Adiciona estrutura inicial da seção planos ao index.html
+[33m158b514[m feat: Adiciona estrutura inicial da seção planos ao index.html
+[33m462321d[m feat: Adiciona estrutura inicial da seção planos ao index.html
+[33mcd4550a[m Renomeando style.css para styles.css
+[33m019fda7[m Renomeando style.css para styles.css
+[33me91310f[m feat: Adicionando favicon do HBO MAX
+[33m2c78c84[m feat: Adicionando favicon do HBO MAX
+[33mfc8a0e9[m feat: Adicionando melhorias a estrutura inicial do projeto
+[33me614d40[m feat: Adicionando melhorias a estrutura inicial do projeto
+[33m42432d9[m feat: Adicionando melhorias a estrutura inicial do projeto
+[33m26e9391[m feat: Adicionando melhorias a estrutura inicial do projeto
+[33m8dee435[m feat: Adiciona index.html com css referenciado e style.css (global) implementado no projeto
+[33m38a10dc[m feat: Adiciona index.html com css referenciado e style.css (global) implementado no projeto
+[33m160a77c[m feat: adiciona index com a estrutura inicial
+[33m2f68390[m feat: adiciona index com a estrutura inicial
+[33me289881[m Merge pull request #27 from juliomoreirx/feat/adiciona-index
+[33m60a758f[m feat: adiciona index na pasta HBO
+[33m7d724f4[m Merge pull request #26 from juliomoreirx/feat/adiciona-arquivos
+[33m3ad8b9b[m feat: adiciona arquivos principais
+[33m1800c47[m Feat: adiociona arquivos necessários do projeto
+[33m72f4cc9[m Template de Pull Request
+[33m234617d[m Issue Template
+[33mfeafd27[m RoadMap - PO

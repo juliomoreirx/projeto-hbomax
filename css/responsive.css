@@ -1,0 +1,390 @@
+/* ========================================
+   RESPONSIVE BREAKPOINTS - responsive.css
+   ======================================== */
+
+/* ========================================
+   GLOBAL: Mobile First - Default styles (0px - 575px)
+   ========================================
+   Estilos mobile vão aqui sem media query
+   ======================================== */
+
+
+/* ========================================
+   PLANOS COMPONENT - Small Mobile Portrait (0px - 575px)
+   ========================================
+   Estes estilos são específicos para o componente .planos e seus filhos
+   em dispositivos móveis pequenos (portrait, até 575px).
+
+   
+
+   ======================================== */
+
+/* Header inicio */
+@media screen and (min-width: 0) and (max-width: 575px) {
+
+    .login-area ul li#entrar {
+        display: none;
+    }
+
+    .button {
+        min-width: 200px;
+    }
+}
+
+/* Header fim */
+
+
+@media screen and (min-width: 320px) and (max-width: 411px) {
+
+
+
+
+
+    
+    
+    
+    
+    .planos__toggle-option {
+        width: auto;
+        font-size: 0.850rem;
+        padding: auto auto;
+
+    }
+
+    .planos__billing-selector {
+        width: auto;
+    }
+
+
+
+
+    .planos h2 {
+        font-size: 0.875rem;
+        letter-spacing: 0.15rem;
+        text-align: center;
+        margin: 1.5rem 0 1rem;
+    }
+
+    .plano-card__title {
+        --plans-card-title-font-size: var(--font-size-heading-4);
+    }
+
+
+    /* Grid de planos: exibe cartões em coluna quando mensal está selecionado */
+    #billing-mensal:checked~#planos-mensais {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "plano-card-1"
+            "plano-card-2"
+            "plano-card-3";
+    }
+
+    /* Grid de planos: exibe cartões em coluna quando anual está selecionado */
+    #billing-anual:checked~#planos-anuais {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "plano-card-1"
+            "plano-card-2"
+            "plano-card-3";
+    }
+
+    /* Áreas do Grid para os cartões */
+    .plano-card-1 {
+        grid-area: plano-card-1;
+    }
+
+    .plano-card-2 {
+        grid-area: plano-card-2;
+    }
+
+    .plano-card-3 {
+        grid-area: plano-card-3;
+    }
+}
+
+/* ========================================
+   PLANOS COMPONENT - Small Mobile Landscape (576px - 767px)
+   ========================================
+   Estilos dos planos para dispositivos móveis pequenos na horizontal
+   ======================================== */
+
+
+/* HEADER INICIO */
+@media screen and (min-width:576px) and (max-width: 767px) {
+    .overlay {
+        width: 400px;
+    }
+
+    .login-area li#entrar {
+        display: none;
+    }
+
+}
+
+
+
+/* READER FIM */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+
+    .destaque-title {
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+
+    /* Opções do toggle (mensal/anual) */
+    .planos__toggle-option {
+        width: auto;
+        font-size: 0.850rem;
+        padding: 0.50rem 1.9rem;
+    }
+
+    .planos h2 {
+        font-size: 1.285rem;
+        letter-spacing: 0.15rem;
+        text-align: center;
+        margin: 1.5rem 0 1rem;
+    }
+
+
+
+
+    #billing-mensal:checked~#planos-mensais,
+    #billing-anual:checked~#planos-anuais {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "plano-card-1"
+            "plano-card-2"
+            "plano-card-3";
+    }
+
+    .plano-card-1 {
+        grid-area: plano-card-1;
+    }
+
+    .plano-card-2 {
+        grid-area: plano-card-2;
+    }
+
+    .plano-card-3 {
+        grid-area: plano-card-3;
+    }
+}
+
+/* ========================================
+   PLANOS COMPONENT - Tablet (768px - 1023px)
+   ========================================
+   Estilos dos planos para tablets
+   ======================================== */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .planos h2 {
+        letter-spacing: 0.15rem;
+        text-align: center;
+        margin: 1.5rem 0 1rem;
+    }
+
+
+    /* Opções do toggle (mensal/anual) */
+    .planos__toggle-option {
+        width: auto;
+        font-size: 0.850rem;
+        padding: 0.50rem 1.9rem;
+    }
+
+    #billing-mensal:checked~#planos-mensais,
+    #billing-anual:checked~#planos-anuais {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "plano-card-1 plano-card-2"
+            "plano-card-3 plano-card-3";
+    }
+
+    .plano-card-1 {
+        grid-area: plano-card-1;
+    }
+
+    .plano-card-2 {
+        grid-area: plano-card-2;
+    }
+
+    .plano-card-3 {
+        grid-area: plano-card-3;
+        grid-column: span 2;
+    }
+
+    /* header */
+
+    .overlay {
+        width: 400px;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+}
+
+/* ========================================
+   PLANOS COMPONENT - Desktop (1024px - 1199px)
+   ========================================
+   Estilos dos planos para desktops médios
+   ======================================== */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+
+
+
+    .planos__toggle-option {
+        width: auto;
+        font-size: 0.850rem;
+        padding: 0.50rem 1.9rem;
+    }
+
+    #billing-mensal:checked~#planos-mensais,
+    #billing-anual:checked~#planos-anuais {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .planos .plano-card__title {
+        --plans-card-title-font-size: var(--font-size-heading-4);
+    }
+}
+
+/* ========================================
+   PLANOS COMPONENT - Large Desktop (1200px+)
+   ========================================
+   Estilos dos planos para desktops grandes (pode ser extendido conforme necessário)
+   ======================================== */
+@media screen and (min-width: 1200px) {
+    /* Adicione estilos específicos para telas grandes aqui, se necessário */
+
+
+    .planos__toggle-option {
+        width: auto;
+        font-size: 0.850rem;
+        padding: 0.60rem 1.9rem;
+    }
+
+    /* header */
+
+    .hamburger-menu {
+        display: none;
+    }
+
+
+    .header-desktop {
+        display: block;
+    }
+}
+
+/* ========================================
+   PLANOS COMPONENT - Extra Large Desktop (1400px+)
+   ========================================
+   Estilos dos planos para telas muito grandes
+   ======================================== */
+@media (min-width: 1400px) {
+    .planos {
+        max-width: 1340px;
+    }
+}
+
+/* ========================================
+   FIM DOS ESTILOS DO COMPONENTE PLANOS
+   ======================================== */
+
+
+
+
+   
+/* =================================================
+   INÍCIO DOS ESTILOS DO COMPONENTE ESTREIAS
+   =================================================
+   Estes estilos são específicos para o componente .Estreias e seus filhos
+   ================================================= */
+
+/* BREAKPOINT 0.5: ≥412px - 2 colunas responsivas */
+@media (min-width: 412px) {
+    .premieres--title {
+    font-size: var(--font-size-heading-3);
+    }
+
+    .premieres {
+        padding: 0 20px;
+    }
+    
+    .premieres--grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 15px;
+    }
+    
+    .premieres--grid-container--grid-item {
+        aspect-ratio: unset; /* Remove o aspect-ratio */
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* BREAKPOINT 1: ≥556px - Mobile com dimensões fixas */
+@media (min-width: 556px) {
+    .premieres--title {
+    padding-bottom: var(--space-lg);
+    font-size: var(--font-size-heading-2);
+    }
+    
+    .premieres--grid-container {
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(3, 142px);
+        gap: 15px;
+        width: auto; /* Remove o 100% */
+    }
+    .content-section--estreias--btn {
+        margin-top: 1rem;
+    }
+}
+
+/* BREAKPOINT 2: ≥770px - Mobile grande */
+@media (min-width: 770px) {
+    .premieres--title {
+    padding-bottom: var(--space-xxl);
+    font-size: var(--font-size-heading-1);
+    }
+    
+    .premieres--grid-container {
+        grid-template-columns: repeat(2, 335px);
+        grid-template-rows: repeat(3, 192px);
+        gap: 15px;
+    }
+}
+
+/* BREAKPOINT 3: ≥1025px - Tablet/Desktop pequeno */
+@media (min-width: 1025px) {
+    .premieres--title {
+    font-size: var(--font-size-heading-2b);
+    }
+
+    .premieres--grid-container {
+        grid-template-columns: repeat(3, 290px);
+        grid-template-rows: repeat(2, 165px);
+        gap: 30px;
+    }
+}
+
+/* BREAKPOINT 4: ≥1200px - Desktop */
+@media (min-width: 1200px) {
+    .premieres--grid-container {
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 200px);
+        gap: 30px;
+    }
+}
+
+   /* ========================================
+   FIM DOS ESTILOS DO COMPONENTE ESTREIAS
+   ======================================== */
