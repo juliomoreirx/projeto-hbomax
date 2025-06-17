@@ -26,6 +26,10 @@
         display: none;
     }
 
+    .overlay .entrar {
+        display: block;
+    }
+
     .button {
         min-width: 200px;
     }
@@ -40,10 +44,10 @@
 
 
 
-    
-    
-    
-    
+
+
+
+
     .planos__toggle-option {
         width: auto;
         font-size: 0.850rem;
@@ -112,18 +116,18 @@
 
 
 /* HEADER INICIO */
-@media screen and (min-width:576px) and (max-width: 767px) {
+@media screen and (min-width:500px) {
     .overlay {
-        width: 400px;
+        width: 300px;
     }
-
-    .login-area li#entrar {
-        display: none;
-    }
-
 }
 
-
+@media screen and (max-width:500px) {
+    .overlay {
+        justify-content: flex-start;
+        padding-left: 3rem;
+    }
+}
 
 /* READER FIM */
 
@@ -220,9 +224,7 @@
 
     /* header */
 
-    .overlay {
-        width: 400px;
-    }
+
 
     .header {
         justify-content: space-between;
@@ -300,7 +302,7 @@
 
 
 
-   
+
 /* =================================================
    INÍCIO DOS ESTILOS DO COMPONENTE ESTREIAS
    =================================================
@@ -310,21 +312,22 @@
 /* BREAKPOINT 0.5: ≥412px - 2 colunas responsivas */
 @media (min-width: 412px) {
     .premieres--title {
-    font-size: var(--font-size-heading-3);
+        font-size: var(--font-size-heading-3);
     }
 
     .premieres {
         padding: 0 20px;
     }
-    
+
     .premieres--grid-container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);
         gap: 15px;
     }
-    
+
     .premieres--grid-container--grid-item {
-        aspect-ratio: unset; /* Remove o aspect-ratio */
+        aspect-ratio: unset;
+        /* Remove o aspect-ratio */
         width: 100%;
         height: 100%;
     }
@@ -334,16 +337,18 @@
 /* BREAKPOINT 1: ≥556px - Mobile com dimensões fixas */
 @media (min-width: 556px) {
     .premieres--title {
-    padding-bottom: var(--space-lg);
-    font-size: var(--font-size-heading-2);
+        padding-bottom: var(--space-lg);
+        font-size: var(--font-size-heading-2);
     }
-    
+
     .premieres--grid-container {
         grid-template-columns: repeat(2, 250px);
         grid-template-rows: repeat(3, 142px);
         gap: 15px;
-        width: auto; /* Remove o 100% */
+        width: auto;
+        /* Remove o 100% */
     }
+
     .content-section--estreias--btn {
         margin-top: 1rem;
     }
@@ -352,10 +357,10 @@
 /* BREAKPOINT 2: ≥770px - Mobile grande */
 @media (min-width: 770px) {
     .premieres--title {
-    padding-bottom: var(--space-xxl);
-    font-size: var(--font-size-heading-1);
+        padding-bottom: var(--space-xxl);
+        font-size: var(--font-size-heading-1);
     }
-    
+
     .premieres--grid-container {
         grid-template-columns: repeat(2, 335px);
         grid-template-rows: repeat(3, 192px);
@@ -366,7 +371,7 @@
 /* BREAKPOINT 3: ≥1025px - Tablet/Desktop pequeno */
 @media (min-width: 1025px) {
     .premieres--title {
-    font-size: var(--font-size-heading-2b);
+        font-size: var(--font-size-heading-2b);
     }
 
     .premieres--grid-container {
@@ -385,6 +390,6 @@
     }
 }
 
-   /* ========================================
+/* ========================================
    FIM DOS ESTILOS DO COMPONENTE ESTREIAS
    ======================================== */
