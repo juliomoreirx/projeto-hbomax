@@ -1,24 +1,36 @@
 /*=======================================================
     FOOTER STYLING -    Estilização do Footer
 =======================================================*/
-ul {
+.first-footer-container,
+.second-footer-container,
+.third-footer-container,
+.fourth-footer-container ul {
   list-style: none;
   padding: 0;
 }
 
-ul li {
+.first-footer-container,
+.second-footer-container,
+.third-footer-container,
+.fourth-footer-container ul li {
   padding: 10px 20px;
   font-size: 0.8rem;
   text-align: center;
 }
 
-ul li a {
+.first-footer-container,
+.second-footer-container,
+.third-footer-container,
+.fourth-footer-container ul li a {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
 }
 
-ul li:hover {
+.first-footer-container,
+.second-footer-container,
+.third-footer-container,
+.fourth-footer-container ul li:hover {
   background-color: var(--color-background-tertiary);
   border-radius: 10px;
 }
