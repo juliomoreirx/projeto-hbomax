@@ -13,7 +13,7 @@
     height: 3.5rem;
     display: flex;
     justify-content: space-between;
-    background: var(--color-background-primary);
+    background: rgba(0, 0, 0, 0.7);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-caption);
     z-index: 10000;
@@ -102,12 +102,13 @@
 
 /* ========== Overlay Menu ========== */
 .overlay {
+    margin-top: 3.5rem;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 50vh;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,29 +121,35 @@
 #checkbox:checked~.overlay {
     opacity: 0.8;
     visibility: visible;
+
 }
 
 .overlay .menu ul {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
 }
 
 .overlay .menu li {
+    text-align: left;
     margin: 20px 0;
 }
 
 .overlay .menu a {
+    padding: 1rem;
     text-decoration: none;
-    font-size: 24px;
+    /* font-size: 24px; */
     color: white;
     font-weight: bold;
     transition: color 0.3s;
+    font-size: var(--font-size-button);
 }
 
 .overlay .menu a:hover {
-    color: #999;
+    background: var(--color-background-quaternary);
+    border-radius: var(--radius-large);
 }
 
 /* .border {
