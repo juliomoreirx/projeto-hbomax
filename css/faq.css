@@ -45,7 +45,6 @@
 }
 
 .faq-answer ul.list {
-  list-style: disc;
   margin: 1rem 3rem;
   padding-bottom: 1rem;
 }
@@ -54,6 +53,9 @@
   color: #fff;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
+  list-style: disc;
+  text-align: left;
+  
 }
 
 p.caption {
@@ -80,4 +82,43 @@ hr {
   height: 1px;
   border: none;
   background-color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .faq-container {
+    width: 48rem;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 767px) {
+  .faq-container {
+    width: 95%;
+    padding: 0;
+  }
+  
+  .faq-answer ul.list {
+    width: 90%;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+  
+
+}
+
+@media (max-width: 379px) {
+  .faq-container {
+    width: 95%;
+    padding: 0;
+  }
+
+  .faq-answer ul.list {
+    width: 95%;
+    font-size: 0.8rem;
+  }
+
+    .faq-question {
+    font-size: 1rem;
+  }
 }
