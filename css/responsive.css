@@ -26,6 +26,9 @@
         display: none;
     }
 
+    .overlay .entrar {
+        display: block;
+    }
 
     .button {
         min-width: 200px;
@@ -113,19 +116,18 @@
 
 
 /* HEADER INICIO */
-@media screen and (min-width:576px) and (max-width: 767px) {
+@media screen and (min-width:500px) {
     .overlay {
-        width: 400px;
+        width: 300px;
     }
-
-    /* .login-area ul{
-        align-items: flex-end;
-        justify-content: flex-end;
-    } */
-
 }
 
-
+@media screen and (max-width:500px) {
+    .overlay {
+        justify-content: flex-start;
+        padding-left: 3rem;
+    }
+}
 
 /* READER FIM */
 
@@ -222,9 +224,7 @@
 
     /* header */
 
-    .overlay {
-        width: 400px;
-    }
+
 
     .header {
         justify-content: space-between;
